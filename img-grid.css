@@ -6,11 +6,17 @@
   --crd-brdr-clr: #000;
 }
 
-body {
-  font-size: 62px;
+body,
+html {
+  font-size: 16px;
   font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
 }
-
+.logo {
+  width: 64px;
+  height: 64px;
+}
 header,
 footer {
   background-color: var(--hdr-clr);
@@ -41,12 +47,12 @@ h2 {
 }
 .grid-layout {
   margin: auto;
-  width: 80%;
+  /* width: 80%; */
   height: 100vh;
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(800px, 1fr));
-  grid-auto-rows: auto;
-  gap: 40px;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 10px;
+  place-content: center;
 }
 .card {
   border: 1px solid;
@@ -62,6 +68,8 @@ h2 {
 
 .img-lapt {
   max-width: 100%;
+  width: 300px;
+  height: 300px;
   object-fit: cover;
   margin-bottom: 20px;
   border-top-left-radius: 5%;
