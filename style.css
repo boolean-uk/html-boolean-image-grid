@@ -32,16 +32,18 @@ main {
   grid-auto-flow: column;
   padding: 5rem 0;
 }
+
 .main {
   grid-area: main;
   display: grid;
-  grid-template-columns: repeat(4, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
   grid-template-rows: auto;
   grid-auto-flow: row;
   padding: 2rem;
   gap: 2rem;
   height: fit-content;
 }
+
 .container {
   border: 0.2rem solid black;
   border-radius: 0.5rem;
@@ -50,6 +52,7 @@ main {
   gap: 0.2rem;
   justify-content: center;
 }
+
 .imageCover {
   position: relative;
   border: 0.2rem dashed rgb(191, 107, 107);
@@ -105,7 +108,7 @@ iframe {
   width: 100rem;
   height: 40rem;
 }
-
+/* 
 @media screen and (max-width: 768px) {
 
   .main {
@@ -130,4 +133,4 @@ iframe {
   .container {
     grid-template-rows: repeat(2, minmax(70px, 1fr));
   }
-}
+} */
