@@ -116,7 +116,7 @@ iframe {
 }
 @media screen and (max-width: 480px) {
   .main {
-    grid-template-columns: repeat(2, minmax(200px, 1fr));
+    grid-template-columns: repeat(1, minmax(200px, 1fr));
   }
   .container {
     grid-template-rows: repeat(2, minmax(100px, 1fr));
