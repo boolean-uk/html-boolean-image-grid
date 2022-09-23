@@ -1,0 +1,138 @@
+:root {
+  --main-clr: #2b8a3e;
+  --hdr-clr: #111827;
+  --twtr-logo-clr: #00acee;
+  --brd-wht-clr: #fff;
+  --crd-brdr-clr: #000;
+}
+
+body,
+html {
+  font-size: 16px;
+  font-family: "Lato", sans-serif;
+  padding: 0;
+  margin: 0;
+  line-height: 1.5;
+}
+.logo {
+  width: 64px;
+  height: 64px;
+}
+header,
+footer {
+  background-color: var(--hdr-clr);
+}
+footer {
+  margin-bottom: 0;
+  margin-top: 80px;
+}
+a {
+  text-decoration: none;
+  color: var(--crd-brdr-clr);
+}
+span {
+  font-style: italic;
+}
+span.rd {
+  color: red;
+  font-weight: bold;
+}
+h2,
+p,
+li {
+  margin-left: 40px;
+}
+.hero-pic {
+  width: 100%;
+  object-fit: cover;
+  max-width: 100%;
+  margin-bottom: 150px;
+}
+.grid-layout {
+  margin: auto;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  gap: 10px;
+}
+.det-pg-grid-layout {
+  margin: auto;
+  margin-top: 4em;
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 10px;
+}
+
+.hero {
+  background-image: url("assets/images/hero.jpg");
+  height: 90vh;
+}
+.card {
+  position: relative;
+  border: 1px solid;
+  border-radius: 4%;
+  overflow: hidden;
+}
+.card-detail {
+  border: 1px solid;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  border-bottom-left-radius: 40px;
+  border-bottom-right-radius: 40px;
+}
+
+.img-lapt {
+  max-width: 100%;
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border-top-left-radius: 5%;
+  border-top-right-radius: 5%;
+}
+.icons {
+  margin-top: 40px;
+  width: 100px;
+  height: 100px;
+}
+.twitter-logo {
+  color: var(--brd-wht-clr);
+  background-color: var(--twtr-logo-clr);
+  border-radius: 50%;
+  padding: 15px;
+  width: 50px;
+  height: 50px;
+}
+.icon-pos {
+  text-align: right;
+  margin-right: 40px;
+}
+
+.logo-crd {
+}
+
+.min-logo {
+  width: 50px;
+  height: 50px;
+  border: 1px solid var(--hdr-clr);
+  border-radius: 50%;
+  position: absolute;
+  top: -5px;
+  right: 10%;
+  margin-top: 20px;
+}
+/* @media screen and (min-width: 600px) {
+  .grid-layout {
+  }
+
+  }
+  .min-logo {
+    width: 150px;
+    height: 150px;
+    border: 1px solid var(--hdr-clr);
+    border-radius: 50%;
+    position: absolute;
+    top: -805px;
+    right: 40px;
+  }
+} */
