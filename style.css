@@ -8,7 +8,8 @@ body {
   font-family: sans-serif;
 }
 
-header {
+header,
+footer {
   background-color: rgb(4, 4, 44);
   height: 60px;
 }
@@ -43,10 +44,12 @@ header {
   border-top-right-radius: 10px;
   border-top-left-radius: 10px;
 }
+
 .container {
-  width: 1200px;
+  width: 100%;
   margin: 0 auto;
   display: grid;
+  justify-content: center;
   grid-template-columns: repeat(auto-fit, 300px);
 }
 
