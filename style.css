@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+}
+.layout {
+  height: 200vh;
+  display: grid;
+
+  grid-template:
+    "header header header" 3rem
+    "left-menu main right-menu" 1fr
+    "footer footer footer" 3rem/
+    1fr 2.3fr 1fr;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  display: inline-block;
+  color: rgb(163, 163, 146);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  text-decoration: none;
+}
+header {
+  grid-area: header;
+  background-color: #011434;
+  padding: 0.3rem;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  font-family: "Play";
+}
+main {
+  grid-area: main;
+  background-color: #fff;
+  padding-top: 1rem;
+  grid-auto-columns: repeat(auto-fit, 9.5rem);
+}
+.right-menu {
+  grid-area: right-menu;
+  background-color: #fff;
+}
+.left-menu {
+  grid-area: left-menu;
+  background-color: #fff;
+}
+footer {
+  grid-area: footer;
+  background-color: #011434;
+}
+.card {
+  height: 15rem;
+  width: 9.5rem;
+  border: 1px solid #011434;
+  border-radius: 3%;
+  margin: 2px;
+  position: relative;
+  display: inline-block;
+  z-index: 1;
+}
+img[alt="logo"] {
+  width: 2rem;
+}
+img[alt="card-logo"] {
+  width: 2rem;
+  display: inline-block;
+  border-radius: 50%;
+  position: absolute;
+  top: 3px;
+  right: 3px;
+}
+img[alt="laptop"] {
+  width: 100%;
+  border-radius: 3% 3% 0 0;
+  object-fit: cover;
+  object-position: top;
+}
+img[alt="github"],
+img[alt="twitter"] {
+  width: 1rem;
+}
+.github-logo,
+.twitter-logo {
+  display: inline-block;
+}
+.social {
+  position: absolute;
+  right: 5px;
+}
+article {
+  font-size: 0.7rem;
+  position: absolute;
+  bottom: 0.5rem;
+  margin: 10px;
+}
+.details {
+  line-height: 1.5;
+  font-size: 1.5rem;
+  text-align: justify;
+  font-family: "Arimo";
+  margin-bottom: 3rem;
+}
+.hero2 img {
+  object-fit: cover;
+  object-position: 0 -300px;
+}
+.hero2 {
+  height: 100vh;
+}
