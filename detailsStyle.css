@@ -5,11 +5,6 @@
     font-family: sans-serif;
 }
 
-a {
-    text-decoration: none;
-    color: black;
-}
-
 /* Header */
 
 header {
@@ -36,7 +31,7 @@ header {
 /* Main 3x1 Grid */
 .mainContainer {
     display: grid;
-    grid-template-columns: 200px minmax(200px, 1fr) 200px;
+    grid-template-columns: minmax(10px, 200px) minmax(200px, 1fr) minmax(10px, 200px);
     grid-template-rows: 1fr;
     grid-template-areas: ". gridContainer .";
     margin-top: 30px;
@@ -54,11 +49,14 @@ header {
 
 .detailsCard {
     grid-area: gridContainer;
+    display: grid;
+    justify-items: center;
 }
 
 /* Boolean Cards */
 
 .booleanCard {
+    max-width: 1080px;
     border: solid 1px black;
     border-radius: 10px;
     display: grid;
@@ -68,7 +66,7 @@ header {
 
 .booleanCard > img {
     max-width: 100%;
-    min-width: max(200px);
+    min-width: max(200px, 50%);
     object-fit: contain;
     border-radius: 10px 10px 0 0;
 }
