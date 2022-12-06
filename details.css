@@ -1,0 +1,42 @@
+/* detail page */
+
+.navbar{
+    display:grid;
+    grid-template-columns: auto 1fr;
+    background-color: #011434;
+    height:80px;
+    border: 1px solid black; 
+    position:fixed;
+    top:0;
+    bottom:0;
+    left:0;
+    right:0;
+    
+}
+.boolean-logo > img{
+    width:100px;
+    height:80px;
+    object-fit:cover;
+    opacity:0.5
+}
+
+.detial-card >img {
+    width:50vw;
+    height:500px;
+    object-fit:cover;
+    border-radius: 20px;
+    padding-top:100px;
+    margin-left:300px;
+    margin-right: auto;
+    box-shadow: 20px 10px 8px rgb(132, 131, 131);
+}
+
+.detail-para > p {
+    font-size:18px;
+    line-height: 1.5em;
+    width:80ch;
+    margin:30px
+
+}
+
+
