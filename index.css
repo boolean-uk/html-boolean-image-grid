@@ -4,6 +4,7 @@ header{
 header img{
     width: 40px;
     padding: 10px;
+    height: 40px;
 }
 .bigcontainer{
     display: grid;
@@ -65,13 +66,23 @@ footer {
     background-color: darkblue;
     height: 40px;
 }
+.mainArticle {
+    display: grid;
+    justify-items: center;
+}
+.articlePage  {
+    width: 45%;
+    align-items: center;
+}
 
 @media screen and (max-width: 1280px) {
     .bigcontainer { 
         grid-template-columns: repeat(4, 260px);
 
     }
-    
+    .mainArticle {
+        
+    }
 }
 @media screen and (max-width: 1090px) {
     .bigcontainer {
