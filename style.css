@@ -3,7 +3,9 @@ body{
 }
 .header {
     height: 75px;
-    background-color: rgb(2, 2, 70) 
+    background-color: rgb(2, 2, 70);
+    position: sticky;
+    top: 0;
 }
 
 .header img {
@@ -13,6 +15,7 @@ body{
 
 .card-grid {
     display: grid;
+    /*grid-template-columns: repeat(auto-fit,minmax(150px,1fr));*/
     grid-template-columns: repeat(4, 150px);
     grid-template-rows: repeat(4, 250px);
     gap: 10px;
@@ -29,7 +32,8 @@ body{
     border-radius: 5px;
     max-width: 100%;
     min-width: 50%;
-    width: 500px; 
+    width: 600px; 
+    position: relative;
 }
 
 .cards p{
@@ -53,9 +57,12 @@ body{
 .boolean-image {
     width: 20px;
     height: 20px;
-   
- 
-    
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+    right: 5px;
+  
+  
 }
 .icon {
     display: grid;
@@ -66,6 +73,5 @@ body{
 }
 .boolean {
     display: grid;
-    justify-content: flex-end;
-  
+   
 }
