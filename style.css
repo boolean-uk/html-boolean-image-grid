@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+    position: sticky;
+    top: 0px;
+}
+.headerBar {
+    height: 50px;
+    background-color: #011434;
+}
+
+.headerBar > a > img {
+    height: 45px;
+}
+
+/* Hero Image */
+
+.hero > img {
+    width: 100vw;
+    height: 350px;
+    object-fit: cover;
+}
+
+/* Main 3x1 Grid */
+.mainContainer {
+    display: grid;
+    grid-template-columns: 200px minmax(200px, 1fr) 200px;
+    grid-template-rows: 1fr;
+    grid-template-areas: ". gridContainer .";
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+/* 4 x 4 Grid  */
+.gridContainer {
+    grid-area: gridContainer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+    gap: 10px;
+    
+}
+
+.detailsCard {
+    grid-area: gridContainer;
+}
+
+/* Boolean Cards */
+
+.booleanCard {
+    border: solid 1px black;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+}
+
+.booleanCard > img {
+    max-width: 100%;
+    min-width: max(200px);
+    object-fit: contain;
+    border-radius: 10px 10px 0 0;
+}
+
+.socialMediaIcons {
+    display: grid;
+    grid-template-columns: 1fr auto auto;
+    grid-template-rows: auto;
+    grid-template-areas: ". git twit";
+    padding: 10px 10px 10px 0;
+}
+
+.githubIcon {
+    grid-area: git;
+}
+
+.twitterIcon {
+    grid-area: twit;
+    padding-left: 5px;
+}
+
+.githubIcon > img, .twitterIcon > img {
+    width: 30px;
+}
+
+.loremipsum > p {
+    padding: 20px;
+}
+
+ /* Footer Bar */
+
+ .footerBar {
+    height: 50px;
+    background-color: #011434;
+}
