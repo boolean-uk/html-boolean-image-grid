@@ -1,0 +1,75 @@
+.body {
+    display: grid;
+    grid-template: 
+    "header" 50px
+    "main" 100% /
+    1fr
+    ;
+
+}
+
+.header{
+    grid-area: header;
+    position: sticky;
+    top: 0;
+    background-color: navy;
+    height: 50px;
+    width: 100%;
+}
+
+.header > img {
+    height: 45px;
+    width: 45px;
+    justify-items: left;
+    align-content: center;
+}
+
+.grid-container{
+    grid-area: main;
+    margin: 50px 100px 50px 100px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2 minmax(150px, auto));
+    gap: 5px;
+    justify-content: center;
+    
+}
+
+.grid-container > .grid-item{
+    background-color: green;
+    border: black solid 3px;
+    border-radius: 5%;
+    display: grid;
+    grid-template-rows: 5fr 1fr 2fr;
+    justify-items: center;
+}
+
+.grid-container > .grid-item > .image img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+}
+
+.grid-container > .grid-item > .text {
+    background-color: white;
+    align-self: bottom;
+    padding: 10px;
+}
+
+.grid-container > .grid-item > .links{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    background-color: white;
+    width: 100%;
+    height: 100%;
+    justify-items: end;
+}
+
+.grid-container > .grid-item > .links > img{
+    grid-area: 3;
+    height: 30px;
+    width: 30px;
+    object-fit: cover;
+
+}
