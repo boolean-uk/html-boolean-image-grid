@@ -60,17 +60,30 @@ header {
 
 .booleanCard {
     border: solid 1px black;
-    border-radius: 10px;
+    border-radius: 11px;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr auto auto;
+    grid-template-areas: 
+    "topOfCard"
+    "middleOfCard"
+    "bottomOfCard";
+    justify-items: right;
 }
 
-.booleanCard > img {
+.booleanCard > img:first-child {
     max-width: 100%;
-    min-width: max(200px);
+    min-width: max(198px);
     object-fit: contain;
     border-radius: 10px 10px 0 0;
+    grid-area: topOfCard;
+}
+
+.booleanCard > img:nth-child(2) {
+    height: 50px;
+    border-radius: 50%;
+    grid-area: topOfCard;
+    padding: 5px;
 }
 
 .socialMediaIcons {
