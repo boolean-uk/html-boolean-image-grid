@@ -4,6 +4,7 @@
     box-sizing: border-box;
     font-family: sans-serif;
     text-decoration: none;
+    color: black;
 }
 
 header {
@@ -49,13 +50,28 @@ header {
     grid-template-rows: 1fr auto auto;
     grid-template-columns: minmax(100px, 300px);
     border: black solid 2px;
-    border-radius: 5px;
+    border-radius: 12px;
+    grid-template-areas: 
+    "topOfCard"
+    "middleOfCard"
+    "bottomOfCard";
+    justify-items: right;
+
 }
 
-.card > img {
+.card > img:first-child {
     max-width: 100%;
     min-width: max(200px);
     object-fit: contain;
+    grid-area: topOfCard;
+    border-radius: 10px 10px 0 0;
+}
+
+.card > img:nth-child(2) {
+    height: 40px;
+    border-radius: 50%;
+    grid-area: topOfCard;
+    margin: 5px    
 }
 
 .card .icons {
@@ -66,6 +82,8 @@ header {
     grid-template-areas: 
     ". github twitter";
     justify-items: right;
+    grid-area: middleOfCard;
+
 }
 
 .card .icons > img:first-child {
@@ -82,6 +100,7 @@ header {
 .card .description {
     padding: 10px;
     margin: 10px;
+    grid-area: bottomOfCard;
 }
 
 .footerBar {
