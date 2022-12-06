@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    position: sticky;
+    top: 0px
+}
+
+.headerBar {
+    background-color: #011434;
+    height: 50px;
+    }
+
+.headerBar img{
+    height: 50px;
+}
+
+.hero > img {
+    width: 100vw;
+    height: 400px;
+    object-fit: cover;
+}
+
+.mainContainer {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    ". gridContainer .";
+    margin-top: 30px;    
+}
+
+.gridContainer{
+    grid-area: gridContainer;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 1fr auto auto;
+    grid-template-columns: minmax(100px, 300px);
+    border: black solid 2px;
+    border-radius: 5px;
+}
+
+.card > img {
+    max-width: 100%;
+    min-width: max(200px);
+    object-fit: contain;
+}
+
+.card .icons {
+    display: grid;
+    padding: 10px;
+    margin: 10px;
+    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-areas: 
+    ". github twitter";
+    justify-items: right;
+}
+
+.card .icons > img:first-child {
+    grid-area: github;
+}
+
+.card .icons > img:nth-child(2){
+    grid-area: twitter;
+}
+.card .icons > img {
+    display: inline;
+}
+
+.card .description {
+    padding: 10px;
+    margin: 10px;
+}
+
+.footerBar {
+    background-color: #011434;
+    height: 50px;
+    margin-top: 10px;
+}
+
+.detailsContainer {
+    grid-area: gridContainer;
+}
