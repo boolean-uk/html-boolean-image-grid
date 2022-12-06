@@ -3,7 +3,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
-    text-decoration: none;
 }
 
 header {
@@ -20,15 +19,9 @@ header {
     height: 50px;
 }
 
-.hero > img {
-    width: 100vw;
-    height: 400px;
-    object-fit: cover;
-}
-
 .mainContainer {
     display: grid;
-    grid-template-columns: 200px 1fr 200px;
+    grid-template-columns: 200px minmax(200px, 1fr) 200px;
     grid-template-rows: auto;
     grid-template-areas: 
     ". gridContainer .";
@@ -38,7 +31,7 @@ header {
 .gridContainer{
     grid-area: gridContainer;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 300px);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     grid-template-rows: repeat(4, auto);
     gap: 10px;
     justify-content: center;
@@ -47,14 +40,15 @@ header {
 .card {
     display: grid;
     grid-template-rows: 1fr auto auto;
-    grid-template-columns: minmax(100px, 300px);
+    grid-template-columns: 1fr;
     border: black solid 2px;
     border-radius: 5px;
+    max-width: 1080px;
 }
 
-.card > img {
+.card img {
     max-width: 100%;
-    min-width: max(200px);
+    min-width: max(200px, 50%);
     object-fit: contain;
 }
 
@@ -62,7 +56,7 @@ header {
     display: grid;
     padding: 10px;
     margin: 10px;
-    grid-template-columns: 2fr 1fr 1fr;
+    grid-template-columns: 1fr auto auto;
     grid-template-areas: 
     ". github twitter";
     justify-items: right;
@@ -92,4 +86,7 @@ header {
 
 .detailsContainer {
     grid-area: gridContainer;
+    display: grid;
+    justify-items: center;
 }
+
