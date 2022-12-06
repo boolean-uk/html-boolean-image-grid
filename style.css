@@ -1,0 +1,87 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+.heroImage{
+    object-fit: cover;
+    width: 100%;
+    height: 600px;
+}
+.booleanNav{
+    background-color: #011434;
+    color: white;
+    padding: 1em;
+    margin-bottom: 1em;
+    position: fixed;
+    top:0;
+    width: 100%;
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.booleanNav img{
+    width: 3em;
+}
+.mainWidth{
+    width: 80%;
+    margin: 0 auto;
+}
+
+.cardContainer{
+    margin-top: 5em;
+    margin-bottom: 2em;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 10px;
+    
+}
+.card{
+    position: relative;
+    top :0;
+    left:0;
+    border: solid 1px black;
+}
+.cardHead{
+    position: relative;
+     top:0;
+     left:0;
+}
+.cardIcon{
+    width: 3em;
+    position:absolute;
+    top:1em;
+    right:1em;border-radius: 50%;
+
+}
+.cardBody{
+    padding: 1em;
+}
+.socialLogo{
+    text-align: right;
+}
+.socialLogo img{
+    width: 2em;
+    margin: 0.5em;
+}
+.cardImage{
+    max-width: 100%;
+    border-radius: 1em 1em 0 0;
+    position: relative;
+    top:0;
+    left:0;
+}
+@media only screen and(max-width:600px){
+    .cardContainer{
+        grid-template-columns: repeat(1,1fr);
+        gap: 5px;
+    }
+    
+}
+@media only screen and (max-width:800px){
+    .cardContainer{
+        grid-template-columns: repeat(2,1fr);
+        gap:5px;
+    }
+    
+}
