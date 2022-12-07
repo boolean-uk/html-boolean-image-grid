@@ -11,9 +11,10 @@ body{
     border: 1px solid black; 
     position:fixed;
     top:0;
-    bottom:0;
+    /* bottom:0; */
     left:0;
     right:0;
+    z-index: 1;
     
 }
 .boolean-logo > img{
@@ -60,7 +61,9 @@ body{
     
     
 }
-
+.container .a-link{
+    text-decoration: none;
+}
 .container  .a-link .project {
     display:grid;
     grid-template-rows: 1fr 50px  auto;
@@ -84,11 +87,9 @@ body{
     padding-right:20px;
     
 }
-.container .a-link .project > p{
+.a-link .project > p{
     font-size: 20px; 
     margin-left:10px;
-    text-decoration:none;  
-
 
 }
 
