@@ -74,17 +74,18 @@ header img {
 
 .cardsection .cardsectiongrid {
     display: grid;
-    grid-template-columns: 1fr minmax(800px, 3fr) 1fr;
+    grid-template-columns: 1fr minmax(auto, 4fr) 1fr;
 }   
 
 .cardsection .cardsectiongrid .cardarea {
     display: grid;
     justify-items: center;
     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    gap: 50px;
+    gap: 10px;
 }
 
 .cardsection .cardsectiongrid .cardarea .card {
+    margin: 5px 0px;
     width: 100%;
     max-width: 350px;
     height: auto;
