@@ -21,12 +21,13 @@ header {
     display: grid;
     grid-template-areas: ". cards .";
     grid-template-columns: 1fr minmax(200px, 5fr) 1fr;
-    /* grid-template-columns: 1fr repeat(auto-fit, minmax(200px, 5fr)) 1fr; */
+    /* grid-template-columns: 1fr  1fr; */
 }
 
 .cards {
     grid-area: cards;
-    justify-items: center;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
 }
 
 .card {
