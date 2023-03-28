@@ -1,6 +1,5 @@
 body {
     margin: 0;
-    height: ;
 }
 
 header {
@@ -10,9 +9,47 @@ header {
     top: 0;
 }
 
+header > a > img {
+    height: 40px;
+}
+
+.hero {
+    height: 600px;
+}
+
+.hero > div > img {
+    height: 600px;
+    width: 100vw;
+    object-fit: cover;
+    position: absolute;
+}
+
+.hero > div {
+    width: 100vw;
+    display: grid;
+    place-content: center;
+}
+
+.hero > div > .hero-text {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: grid;
+    text-align: center;
+    align-content: center;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.hero > div > .hero-text > p {
+    color: white;
+    font-size: 20px;
+}
+
+
 section {
     display: grid;
-    grid-template-columns: 1fr 800px 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
 }
 
 .card-container {
@@ -21,7 +58,6 @@ section {
     gap: 5px;
     padding: 20px 0px;
     justify-content: center;
-    
 }
 
 .card-container > div {
@@ -34,35 +70,39 @@ section {
     margin: 5px;
 }
 
-footer {
-    height: 40px;
-    background-color: #011434;
-    
-}
-
 .img-laptop{
     height: 175px;
     width: 150px;
-    
+    display: grid;
+    justify-content: right;
 }
-.img-laptop > img{
+
+.img-laptop > a > img{
     width: 150px;
     height: 175px;
-   object-fit: cover;
-   border-radius: 10px 10px 0 0;    
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;    
  }
 
- .icons{
+.overlay-img {
+    height: 40px;
+    margin: 5px;
+    display: grid;
+    justify-self: right;
+    position: absolute;
+    border-radius: 50%;
+}
+
+.icons{
     display:grid;
     grid-template-columns: 25px 25px;
     gap: 10px;
     justify-content:right;
     padding: 5px;
     align-content: center;
-
  }
 
- .icons > img{
+.icons > img{
     display: inline;
     height:25px;
  }
@@ -72,9 +112,11 @@ footer {
     width: 100px
 }
 
- div > p{
+div > p{
         font-size: 10px;
-        fz
  }
 
- 
+footer {
+    height: 40px;
+    background-color: #011434; 
+}
