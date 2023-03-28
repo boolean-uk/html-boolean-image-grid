@@ -7,45 +7,42 @@ header, footer {
     height: 200px;
     background-color: rgb(5, 5, 43);
 }
-
 header {
     position: fixed;
-
+    z-index: 1;
 }
-
 .space {
     height: 200px;
 }
-
 .main {
     display: grid;
     grid-template-areas: ". cards .";
     grid-template-columns: 1fr minmax(200px, 5fr) 1fr;
     /* grid-template-columns: 1fr  1fr; */
 }
-
 .cards {
     grid-area: cards;
     display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 5fr));
+    gap: 5px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 5px;
 }
-
 .card {
     border: solid 1px black;
     width: 200px;
     height: 300px;
     border-radius: 3%;
     overflow: hidden;
-    margin: 5px;
-    display: inline-block;
+    place-self: center;
 }
     .laptop {
         width:100%;
         object-fit: cover;
     }
     .github, .twitter {
-        display: inline-block;
-        width: 10%;
+        width: 10%; 
+        position:relative;
+        left: 150px;
     }
     .card p {
         padding: 0 5px 5px 5px;
