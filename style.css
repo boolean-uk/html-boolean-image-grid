@@ -2,6 +2,7 @@ body {
     margin: 0;
 }
 
+
 .hero>img {
     width: 100%;
     height: auto;
@@ -68,7 +69,7 @@ body {
 }
 .logos {
     display: grid;
-    grid-template-columns: 15% 15% 15%;
+    grid-template-columns: 15% 15%;
         justify-content: right;
         gap: 5px;
         margin-top: 20px;
@@ -101,9 +102,8 @@ p {
 
 }
 
-.detailimage > img{
-    width: 100%;
-    height: auto;
+button {
+    background-color: #00DF6C;
+    font-size: 15px;
+    height: 40px;
 }
-
-
