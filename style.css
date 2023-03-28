@@ -1,0 +1,78 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --boolean-dark-blue: #011434;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  position: fixed;
+}
+
+.header, .footer {
+  width: 100%;
+  background-color: var(--boolean-dark-blue);
+  display: grid;
+  align-content: center;
+  height: 55px;
+}
+
+.header img, .footer img {
+  width: 45px;
+}
+
+.card-wrapper {
+  display: grid;
+  margin: 0 250px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+  gap: 5px;
+  place-content: center;
+  padding-top: 95px;
+  margin-bottom: 55px;
+}
+
+.card-wrapper a {
+  text-decoration: none;
+  color: var(--boolean-dark-blue);
+}
+
+.card-section {
+  border-radius: 11px;
+  border: 1px solid #01143471;
+  width: 100%;
+}
+
+.card-wrapper div img {
+  border-radius: 11px 11px 0 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card-section p {
+  margin: 15px 41px 25px 11px;
+  font-size: 14px;
+}
+
+.icons {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: end;
+  gap: 5px;
+  margin: 15px 7px;
+}
+
+.icons img {
+  height: 30px;
+}
