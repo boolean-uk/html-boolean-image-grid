@@ -4,11 +4,26 @@ body {
 
 .grid {
     display: grid;
-    grid-template-rows: 100px 100vh 100px;
+    grid-template-areas: 
+    "header header header" 100px  
+    ". main . " 100%
+    "footer footer footer" 100px /
+    200px 5fr 200px
 }
 
 .header {
+    display: grid;
+    grid-area: header ; 
     background-color: #011434;
+    position: sticky;
+    top: 0;
+}
+.header > div > img {
+    object-fit: cover;
+    width: 85px;
+    margin-top: 6px ;
+    margin-left: 6px;
+
 }
 
 .main {
@@ -17,18 +32,25 @@ body {
 }
 
 .footer {
+    grid-area: footer ;
     background-color: #011434;
 }
 
 .main {
     display: grid;
-    grid-template-columns: repeat(4, 400px);
+    grid-area: main;
+    /* grid-template-columns: repeat(4, 400px); */
     justify-content: center;
     gap: 10px;
     margin-top: 30px;
     margin-bottom: 30px;
-    
+     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+
+
+
+
+
 .main > div {
     border: solid 2px black;
     border-radius: 5%;
@@ -44,7 +66,7 @@ body {
     object-fit: cover;
     height: 100%;
     max-width: 100%;
-    width: 400px;
+    width: 498px;
     border-start-end-radius: 5%;
     border-start-start-radius: 5%;
 }
@@ -62,4 +84,13 @@ p {
 .text {
     margin-left: 15px;
     padding-right: 27%;
+    margin-bottom: 110px;
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 800px) {
+    .main {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
 }
