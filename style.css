@@ -4,8 +4,36 @@ header, footer {
     background-color: rgb(5, 5, 43);
 }
 
+header {
+    position: fixed;
+
+}
+
 .main {
     display: grid;
-    grid-area: ". cards .";
-    grid-template-columns: 1fr minmax(100px, 800px) 1fr;
+    grid-template-areas: ". cards .";
+    grid-template-columns: 1fr minmax(200px, 800px) 1fr;
 }
+
+.card {
+    border: solid 1px black;
+    width: 200px;
+    height: 300px;
+    border-radius: 3%;
+    overflow: hidden;
+    margin: 5px;
+}
+    .laptop {
+        width:100%;
+        object-fit: cover;
+    }
+    .github, .twitter {
+        display: inline-block;
+        width: 10%;
+    }
+    .card p {
+        padding: 0 5px 5px 5px;
+        margin: 1px;
+    }
+
+
