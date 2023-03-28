@@ -1,0 +1,84 @@
+* {
+    margin: 0px;
+}
+
+header {
+    background-color: rgb(9, 9, 91);
+    height: 50px;
+}
+
+header>img {
+    width: 30px;
+    margin: 5px;
+    padding: 5px;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 25% 25% 25% 25%;
+    padding: 65px;
+}
+
+.card {
+    width: 200px;
+    display: grid;
+    border-radius: 10px;
+    grid-template-areas:
+        "top"
+        "bottom";
+    grid-template-rows: 60% 40%;
+    height: 350px;
+    margin: 20px;
+    border: 1px solid black;
+}
+
+.top {
+
+    grid-area: top;
+}
+
+.top>.card-logo {
+    width: 35px;
+    position: absolute;
+    border-radius: 10000px;
+    margin-left: 160px;
+    margin-top: 7px;
+}
+
+.top>.card-laptop {
+    width: 200px;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    text-align: top;
+}
+
+.bottom {
+    justify-items: right;
+    grid-area: bottom;
+    display: grid;
+    grid-template-rows: 10% 90%;
+    grid-template-areas:
+        "icons"
+        "para"
+}
+
+.icons {
+    grid-area: icons;
+    padding-right: 10px;
+    margin: 5px;
+}
+
+.icons>img {
+    width: 30px;
+}
+
+.para {
+    grid-area: para;
+    padding: 15px;
+    margin: 15px;
+}
+footer {
+    background-color: rgb(9, 9, 91);
+    height: 50px;
+}
