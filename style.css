@@ -1,0 +1,11 @@
+header, footer {
+    width: 100vw;
+    height: 200px;
+    background-color: rgb(5, 5, 43);
+}
+
+.main {
+    display: grid;
+    grid-area: ". cards .";
+    grid-template-columns: 1fr minmax(100px, 800px) 1fr;
+}
