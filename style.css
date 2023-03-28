@@ -8,7 +8,7 @@
     grid-template-areas:
     "header header header"
      ". mainarea .";
-    grid-template-columns: 300px 1fr 300px;
+    grid-template-columns: 270px 1fr 270px;
     grid-template-rows: 100px 1fr;
     background-color: rgb(255, 255, 255);
 }
@@ -37,7 +37,7 @@ header > img {
     grid-area: mainarea;
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-columns: repeat(auto-fill, 300px);
     grid-template-rows: repeat(auto-fill, 520px);
 
 
