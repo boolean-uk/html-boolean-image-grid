@@ -1,0 +1,110 @@
+body {
+  margin: 0;
+}
+
+.grid {
+  display: grid;
+  grid-template:
+    "header"
+    "main"
+    "footer";
+  grid-template-rows: 50px 1fr 50px;
+}
+
+.header {
+  grid-area: header;
+  background-color: #001632;
+  position: fixed;
+  width: 100vw;
+}
+
+.logo {
+  width: 50px;
+  padding-left: 10px;
+}
+
+.main {
+  grid-area: main;
+
+  display: grid;
+  place-items: center;
+  place-content: center;
+  /* margin-left: 100%;
+  margin-right: 100%; */
+  grid-template-rows: repeat(auto-fit, 400px);
+  grid-template-columns: repeat(4, 265px);
+  row-gap: 10px;
+  column-gap: 1px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 250px 50px 100px;
+  grid-template-areas:
+    "card_img"
+    "card_icons"
+    "card_text";
+  width: 250px;
+  border: 1px solid black;
+  border-radius: 5%;
+}
+
+.card_img {
+  grid-area: card_img;
+}
+
+.laptop {
+  width: 100%;
+  border-top-right-radius: 6%;
+  border-top-left-radius: 6%;
+}
+
+.card_icons {
+  grid-area: card_icons;
+  display: grid;
+  justify-content: end;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.card_text {
+  grid-area: card_text;
+}
+
+.github,
+.twitter {
+  width: 40%;
+  margin: 2px;
+}
+
+.card_text {
+  padding: 20px;
+}
+.footer {
+  grid-area: footer;
+  background-color: #001632;
+}
+
+@media screen and (max-width: 1070px) {
+  .main {
+    grid-template-columns: repeat(3, 265px);
+  }
+}
+
+@media screen and (max-width: 810px) {
+  .main {
+    grid-template-columns: repeat(2, 265px);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .main {
+    grid-template-columns: repeat(1, 265px);
+  }
+
+  .header {
+    background-color: yellow;
+  }
+} ;
