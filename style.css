@@ -1,0 +1,177 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+:root {
+  --boolean-dark-blue: #011434;
+  --darkgreen: #1d313a;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header {
+  position: fixed;
+}
+
+.header,
+.footer {
+  width: 100%;
+  background-color: var(--boolean-dark-blue);
+  display: grid;
+  align-content: center;
+  height: 55px;
+}
+
+.hero-image {
+  position: relative;
+  margin-bottom: 45px;
+  z-index: -10;
+}
+
+.hero-image img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.text-centre {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #c9c6c610;
+  font-size: 25px;
+  width: 300px;
+  height: 75px;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  border-radius: 5px;
+}
+
+.header img,
+.footer img {
+  width: 45px;
+}
+
+.card-wrapper {
+  display: grid;
+  margin: 0 250px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 280px));
+  gap: 5px;
+  place-content: center;
+  margin-bottom: 55px;
+}
+
+.card-wrapper a {
+  text-decoration: none;
+  color: var(--boolean-dark-blue);
+}
+
+.card-wrapper div img {
+  border-radius: 11px 11px 0 0;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.card-section p {
+  margin: 15px 41px 25px 11px;
+  font-size: 14px;
+}
+
+.card-section {
+  position: relative;
+  border-radius: 11px;
+  border: 1px solid #01143471;
+  width: 100%;
+}
+
+.card-section .rounded-logo {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  
+  height: 35px;
+  border-radius: 50%;
+}
+
+.icons {
+  display: grid;
+  grid-auto-flow: column;
+  place-content: end;
+  gap: 5px;
+  margin: 15px 7px;
+}
+
+.icons img {
+  height: 30px;
+}
+
+.detail-image {
+  width: 250px;
+  padding-top: 95px;
+}
+
+.experience {
+  color: var(--darkgreen);
+  display: grid;
+  grid-template-rows: 250px 125px 1fr;
+  grid-template-columns: minmax(450px, 750px);
+
+  place-content: center;
+  padding: 0 35px;
+}
+
+.experience-header {
+  font-size: 39px;
+  font-weight: bold;
+  margin-top: 95px;
+  padding-top: 25px;
+}
+
+.introduction {
+  margin: 35px 0;
+}
+
+.introduction h3 {
+  margin-top: 35px;
+  font-size: 23px;
+}
+
+.introduction p {
+  font-size: 23px;
+  line-height: 1.5;
+  /* margin-bottom: 45px; */
+  margin: 11px 0 0;
+}
+
+.tech-skills {
+  margin-left: 45px;
+  line-height: 1.5;
+  font-size: 21px;
+  display: grid;
+  grid-template-columns: 0.5fr 1fr;
+}
+
+nav {
+  margin-bottom: 25px;
+}
+
+nav a {
+  color: rgb(46, 117, 184);
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: rgb(255, 102, 0);
+  font-weight: bold;
+}
