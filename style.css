@@ -78,14 +78,14 @@ a {
     color: black;
 }
 
-.image-container > #laptop {
+.image-container > .laptop {
     width: 100%;
     object-fit: contain;
     border-radius: 10px 10px 0 0;
     grid-area: top;
 }
 
-.image-container > #boolean {
+.image-container > .boolean {
     grid-area: top;
     justify-self: right;
     padding: 10px;
@@ -93,7 +93,7 @@ a {
     border-radius: 100%;
 }
 
-.image-container > #svg-icons {
+.image-container > .svg-icons {
     display: grid;
     grid-template-columns: 1fr auto auto;
     grid-gap: 10px;
@@ -109,11 +109,11 @@ a {
     width: 34px;
 }
 
-#github-logo {
+.github-logo {
     grid-area: github;
 }
 
-#twitter-logo {
+.twitter-logo {
     grid-area: twitter;
 }
 
