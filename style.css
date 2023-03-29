@@ -1,17 +1,39 @@
 body {
   margin: 0;
 }
-
+.hero {
+  width: 100vw;
+}
+.herogrid {
+  display: grid;
+  place-items: center;
+  grid-area: herogrid;
+}
+.herogrid p {
+  display: grid;
+  font-size: 40px;
+  color: white;
+  font-weight: bold;
+  place-items: center;
+  position: absolute;
+  height: 160px;
+  width: 400px;
+  background-color: rgba(0, 0, 0, 0.185);
+  border-radius: 10px;
+  border: solid 0px black;
+}
 .grid {
   display: grid;
   grid-template:
     "header"
+    "herogrid"
     "main"
     "footer";
-  grid-template-rows: 50px 1fr 50px;
+  grid-template-rows: 50px auto 1fr 50px;
 }
 
 .header {
+  z-index: 1;
   grid-area: header;
   background-color: #001632;
   position: fixed;
@@ -29,9 +51,7 @@ body {
   display: grid;
   place-items: center;
   place-content: center;
-  /* margin-left: 100%;
-  margin-right: 100%; */
-  grid-template-rows: repeat(auto-fit, 400px);
+  grid-template-rows: repeat(auto-fit, 450px);
   grid-template-columns: repeat(4, 265px);
   row-gap: 10px;
   column-gap: 1px;
@@ -41,14 +61,15 @@ body {
 
 .card {
   display: grid;
-  grid-template-rows: 250px 50px 100px;
+  grid-template-rows: 250px 50px 100px 50px;
   grid-template-areas:
     "card_img"
     "card_icons"
-    "card_text";
+    "card_text"
+    "back";
   width: 250px;
   border: 1px solid black;
-  border-radius: 5%;
+  border-radius: 10px;
 }
 
 .card_img {
@@ -57,8 +78,8 @@ body {
 
 .laptop {
   width: 100%;
-  border-top-right-radius: 6%;
-  border-top-left-radius: 6%;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 .card_icons {
@@ -107,4 +128,44 @@ body {
   .header {
     background-color: yellow;
   }
-} ;
+}
+.abslogo {
+  position: relative;
+  width: 40px;
+  border-radius: 50%;
+  bottom: 240px;
+  left: 200px;
+}
+.solo {
+  display: grid;
+  grid-template-rows: 500px 100px 200px 80px;
+  grid-template-areas:
+    "card_img"
+    "card_icons"
+    "card_text"
+    "back";
+  width: 500px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+.solologo {
+  bottom: 480px;
+  left: 400px;
+  width: 80px;
+}
+.sologrid {
+  display: grid;
+  place-items: center;
+  place-content: center;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr;
+}
+.back {
+  display: grid;
+  place-items: center;
+  grid-area: back;
+}
+.back button {
+  height: 75%px;
+  width: 70%;
+}
