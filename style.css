@@ -4,20 +4,47 @@
 }
 .container{
     display: grid;
-    grid-template-rows: 60px 1fr 60px;
+    grid-template-rows: 60px 800px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas: 
     "header"
+    "hero"
     "main"
     "footer";
 }
 .header{
     grid-area: header;
     background-color: rgb(14, 14, 62);
+    position: sticky;
+    top: 0;
 }
 .header > img{
     height: 100%;
 }
+
+.hero {
+    grid-area: hero;
+    
+}
+
+.hero > img {
+object-fit: fill;
+min-height: fit-content;
+}
+
+.hero > a > button  {
+    width: 300px;
+    height: 100px;
+    border-radius: 10px;
+    position: relative;
+    bottom: 1000px;
+    left: 500px;
+    font-size: 25px;
+    color: white;
+    background-color: rgba(128, 128, 128, 0.709) ;
+}
+
+
 .main{
     padding: 50px;
     grid-area: main;
@@ -60,15 +87,7 @@
     grid-area: footer;
     background-color: rgb(14, 14, 62);
 }
-/* .boolean-icon{
-    min-width: 45px;
-    border-radius: 50%;
-    position: absolute;
-    top: 115px;
-    left: 250px;
 
-
-} */
 .boolean-icon2{
     min-width: 45px;
     border-radius: 50%;
