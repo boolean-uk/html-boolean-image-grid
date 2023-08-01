@@ -76,3 +76,9 @@ body {
     margin-right: 5px;
   }
   
+  footer {
+    background-color: rgb(14, 25, 87);
+    width: 100%;
+    color: white; 
+    height: 60px;
+}
