@@ -58,6 +58,7 @@ header {
     grid-template: 2fr 1fr / 1fr;
     border: 1px solid #011434;
     border-radius: 10px;
+    cursor: pointer;
     overflow: hidden;
 }
 
@@ -92,4 +93,31 @@ header {
 .inner {
     height: 54px;
     width: 57px;
+}
+
+/* Info Page */
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:visited {
+    color: #fff;
+}
+
+.info {
+    display: grid;
+    place-items: center;
+    padding: 1rem 2rem;
+    gap: 10px;
+}
+
+.info p {
+    max-width: 500px;
 }
