@@ -3,3 +3,18 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    display: grid;
+    grid-template: 1fr / 77px 1fr;
+    background-color: #011434;
+    height: 72px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    border: 1px solid #011434;
+    border-radius: 50%;
+    background-image: url(assets/images/boolean.jpeg);
+    background-size: cover;
+}
