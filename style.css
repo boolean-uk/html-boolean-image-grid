@@ -43,3 +43,53 @@ header {
 }
 
 /* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 333px);
+    grid-auto-rows: 460px;
+    place-content: center;
+    padding: 2rem 5rem;
+    gap: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template: 2fr 1fr / 1fr;
+    border: 1px solid #011434;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.card-image {
+    display: flex;
+    justify-content: end;
+    padding: 0.3rem;
+    background-image: url(assets/images/boolean-laptop.jpg);
+    background-size: cover;
+}
+
+.card-info {
+    display: grid;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.card-description p {
+    max-width: 70%;
+}
+
+.card-icons {
+    display: flex;
+    justify-content: end;
+    gap: 5px;
+}
+
+.card-icons img {
+    width: 35px;
+}
+
+.inner {
+    height: 54px;
+    width: 57px;
+}
