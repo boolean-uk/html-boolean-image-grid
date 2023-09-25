@@ -1,8 +1,13 @@
+/* Global Reset */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: sans-serif;
 }
+
+/* Header */
 
 header {
     display: grid;
@@ -18,3 +23,23 @@ header {
     background-image: url(assets/images/boolean.jpeg);
     background-size: cover;
 }
+
+/* Hero */
+
+.hero {
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 72px);
+    background-image: url(assets/images/hero.jpg);
+    background-size: cover;
+}
+
+.hero h2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2.25rem;
+}
+
+/* Cards */
