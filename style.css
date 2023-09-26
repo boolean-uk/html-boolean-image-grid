@@ -1,6 +1,15 @@
 * {
   font-family: sans-serif;
 }
+
+.grid-container {
+  display: grid;
+  gap: 20px;
+  width: 100%;
+  grid-template-columns: repeat(auto-fill, 200px);
+  place-content: center;
+}
+
 .card {
   border: 1px solid black;
   height: 300px;
@@ -11,11 +20,16 @@
 }
 
 .text {
-  position: absolute;
-  height: 15px;
+  height: 70px;
+  box-sizing: border-box;
+  padding: 0 10px;
+}
+
+.text p {
   font-size: small;
-  padding: 10px;
-  overflow: auto;
+  text-overflow: ellipsis;
+  margin: 0;
+  padding: 0;
 }
 
 .header-img {
@@ -29,10 +43,18 @@
 }
 
 .img-container {
-  height: 50px;
-  position: relative;
+  height: 25px;
   display: grid;
   grid-auto-flow: column;
+  grid-auto-columns: 25px;
+  justify-content: end;
+  grid-auto-rows: 25px;
+  gap: 10px;
+  padding: 10px;
+}
+
+.img-container > img {
+  height: 100%;
 }
 
 .logo {
@@ -41,12 +63,4 @@
   right: 10px;
   top: 10px;
   border-radius: 100%;
-}
-
-.github {
-  right: 10px;
-}
-
-.twitter {
-  right: 50px;
 }
