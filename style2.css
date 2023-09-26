@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: black;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #011434;
+    z-index: 1;
+}
+
+.rel {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    top: 10px;
+    left: 20px;
+}
+
+.hero {
+    position: relative;
+    top: 0;
+    width: 100vw;
+}
+
+.hero > img {
+    width: 100vw;
+    height: auto;
+    z-index: 0;
+}
+
+.hero > h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border: solid 1px white;
+    border-radius: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 20px;
+    width: 100vw;
+    padding: 30px;
+    place-items: center;
+}
+
+.grid-item {
+    position: relative;
+    display: grid;
+    grid-template-rows: 300px 1fr 150px;
+    width: 300px;
+    grid-gap: 10px;
+    border: solid 1px black;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+
+.big-pic {
+    position: relative;
+    width: 298px;
+    height: 300px;
+    border-radius: 20px 20px 0 0;
+}
+
+.TR-logo {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 30px;
+}
+.icons {
+    position: relative;
+    top: 5px;
+    left: 180px;
+}
+
+.text {
+    width: 250px;
+    text-align: left;
+    padding: 10px;
+}
+
+.footer {
+    position: sticky;
+    bottom: 0;
+    width: 100vw;
+    height: 100px;
+    background-color: #011434;
+}
