@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* header */
+.header{
+    height: 50px;
+    background-color: rgb(2, 14, 55);
+}
+/* body  */
+.body{
+    display: grid;
+    grid-template-columns:repeat(4,200px)
+    ;
+    gap: 5px;
+    padding: 30px 200px;
+}
+.logo{
+    position: relative;
+    left: 90px;
+}
+.box{
+    border: 1px solid rgb(0, 0, 0);
+    height: auto;
+    border-radius: 5px;
+    
+}
+.box > img{
+    width: 100%;
+    object-fit: cover;
+}
+.box p{
+    padding: 10px
+}
+.boolean{
+    position: relative;
+    left: 40px;
+    bottom: 200px;
+}
+#boo{
+    border-radius: 50%;
+}
+.hero img{
+    width: 100%;
+    height: auto;
+}
