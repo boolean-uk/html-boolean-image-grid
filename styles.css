@@ -148,3 +148,31 @@ body {
     bottom: 0
     
 }
+
+/* Making it reponsive  - The number of cards displayed in a single row should be reduced*/
+
+/* Media Query for smaller screens */
+/* When the screen is 800px, the main content column within the grid template columns should reduce to 3 */
+
+@media (max-width: 800px) {
+    .main-content-col {
+        grid-template-columns: repeat(3, 265px);
+    }
+}
+
+/* Media Query for even smaller screens - 600px */
+/* When the screen is 600px, the main content column within the grid template columns should reduce to 1 */
+
+@media (max-width: 600px) {
+    .main-content-col {
+        grid-template-columns: repeat(1, 265px);
+    }
+}
+
+/* Media Query for even smaller screens - 400px */
+/* When the screen is 400px width, only one should appear */
+@media (max-width: 400px) {
+    .main-content-col {
+        grid-template-columns: 265px;
+    }
+}
