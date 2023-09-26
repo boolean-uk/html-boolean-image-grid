@@ -53,7 +53,7 @@ nav {
 main {
     padding: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, 160px);
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 10px;
 }
 
