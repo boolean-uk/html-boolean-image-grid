@@ -12,15 +12,14 @@
 
 .text {
   position: absolute;
-  width: 80%;
+  height: 15px;
   font-size: small;
-  margin: 20px;
-  text-overflow: ellipsis;
+  padding: 10px;
+  overflow: auto;
 }
 
 .header-img {
-  height: 175px;
-  /* object-fit: fill; */
+  height: 60%;
   overflow: hidden;
 }
 
@@ -30,6 +29,7 @@
 }
 
 .img-container {
+  height: 50px;
   position: relative;
   display: grid;
   grid-auto-flow: column;
