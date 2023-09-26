@@ -15,6 +15,7 @@ body {
     "main"
     "footer";
     grid-template-rows: 50px 100vh 50px;
+    /* 100 view height */
     gap:5px;
     /* padding: 5px */
 
@@ -26,7 +27,7 @@ body {
     /* border: 1px dashed black; */
     
     background-color: rgb(12, 12, 58);
-    /* fix the header */
+    /* fix the header, width 100% */
     position:fixed;
     width: 100%;
     top: 0
@@ -142,12 +143,13 @@ body {
     /* border: 1px dashed black; */
     background-color: rgb(12, 12, 58);
 
-     /* Fix the header */
+    
     position:fixed;
     width: 100%;
     bottom: 0
-    
-}
+
+
+} 
 
 /* Making it reponsive  - The number of cards displayed in a single row should be reduced*/
 
