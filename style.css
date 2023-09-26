@@ -1,0 +1,78 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+.container {
+    display: grid;
+    grid-template:
+        "header  header  header" 50px
+        "   .     main    .    " 1fr
+        "footer  footer  footer" 50px/
+        .3fr 1fr .3fr;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(1, 20, 52);
+}
+
+main {
+    grid-area: main;
+}
+
+footer {
+    grid-area: footer;
+    background-color: rgb(1, 20, 52);
+}
+
+.card {
+    position: relative;
+    border: black solid 1px;
+    border-radius: 10px;
+    margin: 10px;
+    height: 450px;
+    width: 300px;
+}
+
+.bool-logo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+
+.laptop {
+    width: 300px;
+    object-fit: contain;
+}
+
+.top-right {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.down-size {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 230px;
+    top: 15px;
+    margin-bottom: 10px;
+}
+
+
+img {
+    border-radius: 10px;
+}
+
+.card p {
+    margin: 10px;
+}
