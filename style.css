@@ -1,0 +1,111 @@
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*     HEADER     */
+.header {
+    height: 6rem;
+    background-color: rgb(6, 22, 51);
+}
+
+.header img{
+    height: 100%;
+    padding: 1rem;
+}
+
+/*        MAIN       */
+.main {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1rem;
+    justify-content: center;
+    padding: 0 20rem;
+    row-gap: 2rem;
+}
+
+.card {
+    width: 25rem;
+    border: 2px solid rgb(6, 22, 51);
+    border-radius: 5px;
+    position: relative;
+}
+
+.boolean-laptop {
+    width: 100%;
+    height: 25rem;
+}
+
+.boolean-icon {
+    height: 4rem;
+    border-radius: 50%;
+    position: absolute;
+    right: .5rem;
+    top: .5rem;
+}
+
+.icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: .5rem;
+    padding: 1rem;
+}
+
+.icons img {
+    height: 3rem;
+}
+
+.card-text {
+    width: 15rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+}
+
+.card-text p {
+    font-size: 14px;
+}
+
+
+.footer {
+    height: 6rem;
+    background-color: rgb(6, 22, 51);
+    margin: .2rem;
+    margin-top: 1rem;
+}
+
+.footer img{
+    height: 100%;
+    padding: 1rem;
+}
+
+/*     HERO     */
+.hero {
+    height: 100vh;
+    background-image: url(./assets/images/hero.jpg);
+    margin-top: .5rem;
+}
+
+.hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero h1 {
+    color: white;
+    font-size: 40px;
+    border: 0 solid transparent;
+    background-color: rgba(0, 0, 0, .5);
+    border-radius: 5px;
+    padding: 2rem;
+}
