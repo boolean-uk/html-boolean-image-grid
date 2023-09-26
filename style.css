@@ -1,0 +1,134 @@
+/* Global Reset */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* Header */
+
+header {
+    display: grid;
+    grid-template: 1fr / 77px 1fr;
+    background-color: #011434;
+    height: 72px;
+    box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    border: 1px solid #011434;
+    border-radius: 50%;
+    background-image: url(assets/images/boolean.jpeg);
+    background-size: cover;
+}
+
+/* Hero */
+
+.hero {
+    display: grid;
+    place-items: center;
+    height: calc(100vh - 72px);
+    background-image: url(assets/images/hero.jpg);
+    background-size: cover;
+}
+
+.hero h2 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    border-radius: 10px;
+    padding: 2.25rem;
+}
+
+/* Cards */
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 333px);
+    grid-auto-rows: 460px;
+    place-content: center;
+    padding: 2rem 5rem;
+    gap: 10px;
+}
+
+.card {
+    display: grid;
+    grid-template: 2fr 1fr / 1fr;
+    border: 1px solid #011434;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card-image {
+    background-image: url(assets/images/boolean-laptop.jpg);
+    background-size: cover;
+}
+
+.card-info {
+    display: grid;
+    grid-template: 50px 1fr / 1fr;
+    padding: 0.5rem;
+    gap: 10px;
+}
+
+.card-description p {
+    max-width: 70%;
+}
+
+.card-icons img {
+    float: right;
+    margin-right: 5px;
+    width: 35px;
+}
+
+.inner {
+    position: relative;
+    float: right;
+    top: 5px;
+    right: 5px;
+    height: 54px;
+    width: 57px;
+}
+
+/* Info Page */
+.nav {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 3rem;
+}
+
+.nav a {
+    text-decoration: none;
+}
+
+.nav a:visited {
+    color: #fff;
+}
+
+.info {
+    display: grid;
+    place-items: center;
+    padding: 1rem 2rem;
+    gap: 10px;
+}
+
+.info p {
+    max-width: 500px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #011434;
+    height: 72px;
+}
+
+footer span {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    color: white;
+}
