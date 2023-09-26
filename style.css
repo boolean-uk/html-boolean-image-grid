@@ -4,14 +4,12 @@ header {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    position: sticky;
 }
 
 .boolean-logo{
-    position: absolute;
-    top: 10px;
-    left: 8px;
-    position: fixed;
-
+    top: 15px;
+    left: 8px
 }
 
 .hero {
