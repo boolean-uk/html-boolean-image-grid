@@ -41,8 +41,10 @@
     border-radius: 10px;
 }
 
-.github-icon, .twitter-icon {
-    display: inline-block;
+.card-images {
+    width: 220px;
+    height: 230px;
+
 }
 
 .boolean-laptop {
@@ -51,6 +53,14 @@
     object-fit: cover;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+}
+
+.card-boolean-logo {
+    width: 35px;
+    border-radius: 50px;
+    position: relative;
+    bottom: 230px;
+    left: 180px;
 }
 
 .icons {
