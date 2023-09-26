@@ -63,15 +63,13 @@ header {
 }
 
 .card-image {
-    display: flex;
-    justify-content: end;
-    padding: 0.3rem;
     background-image: url(assets/images/boolean-laptop.jpg);
     background-size: cover;
 }
 
 .card-info {
     display: grid;
+    grid-template: 50px 1fr / 1fr;
     padding: 0.5rem;
     gap: 10px;
 }
@@ -80,17 +78,17 @@ header {
     max-width: 70%;
 }
 
-.card-icons {
-    display: flex;
-    justify-content: end;
-    gap: 5px;
-}
-
 .card-icons img {
+    float: right;
+    margin-right: 5px;
     width: 35px;
 }
 
 .inner {
+    position: relative;
+    float: right;
+    top: 5px;
+    right: 5px;
     height: 54px;
     width: 57px;
 }
