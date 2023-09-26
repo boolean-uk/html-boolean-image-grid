@@ -1,0 +1,36 @@
+*{
+    background-color: aliceblue;
+    margin: 2px;
+
+}
+.container{
+    display: grid;
+    grid-template-columns:  repeat(4 , 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 250px 20px;
+}
+.header{
+    width: 20px;
+    background-color: rgb(1, 1, 16);
+    
+}
+    
+
+
+
+.card {
+    border: 2px solid blue;
+    width: 200px;
+    height: 400px;
+}
+
+.backimage{
+    width: 200px;
+    height: auto;
+
+}
+
+.toplogo{
+    width: 15px;
+    align-self: self-end;
+}
