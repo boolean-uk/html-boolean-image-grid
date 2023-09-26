@@ -10,13 +10,7 @@
     background-color: aqua;
     width: 60px;
     border-radius:50%;
-
-}
-
-.card {
-    height: 200px;
-    background-color: dodgerblue;
-}
+}  
 
 /* ======== header ======== */
 
@@ -51,9 +45,49 @@ nav {
 /* ======== main ======== */
 
 main {
-    padding: 10px;
+    padding: 10px 300px; /*this adds padding to the left and right and place the grid at the center.*/
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
     gap: 10px;
+
+}
+.card {
+    background-color: dodgerblue;
+    outline: 1px solid black;
+}
+.card-image {
+    background-color: rgb(24, 184, 24);
+    height:150px;
+    position:relative
+
+}
+.card-text {
+    background-color: white;
+    color: black;
+    position: relative;
+    padding: 50px 10px 10px 10px
+
+}
+.boolean{
+    background-color: red;
+    position:absolute;
+    right:5px;
+    height:30px;
+    width:30px;
+    top:5px;
+}
+.github , .twitter {
+    background-color: black;
+    position:absolute;
+    right:5px;
+    height:20px;
+    width:20px;
+    top:10px;
 }
 
+.twitter {
+    right: 30px;
+}
+img {
+    object-fit: contain;
+}
