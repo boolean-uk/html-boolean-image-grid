@@ -16,7 +16,7 @@ body {
         "header  header  header" 50px
         "   .     main    .    " 1fr
         "footer  footer  footer" 50px/
-        200px 1fr 200px;
+        300px 1fr 300px;
 }
 
 header {
@@ -28,6 +28,8 @@ main {
     grid-area: main;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px 0px;
+    gap: 10px;
 }
 
 footer {
@@ -39,7 +41,6 @@ footer {
     position: relative;
     border: black solid 1px;
     border-radius: 10px;
-    margin: 10px;
     height: 450px;
     width: 300px;
 }
