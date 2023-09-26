@@ -3,18 +3,66 @@
   box-sizing: border-box;
 }
 
-body {
+
+.container {
   display: grid;
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: 100px 1fr 100px;
-  grid-template:
-    "header header header" 
-    "left-menu main right-menu"
-    "left-menu main right-menu";
-    border: 2px dotted black;
+  grid-template-columns: 100px 1fr 100px;
+  grid-template-rows: 80px 1fr 100px;
+ 
+  grid-template-areas:
+      "header header header"
+      "left-menu main right-menu";
+  border: 2px dotted black;
 }
 
-header{
+header {
   grid-area: header;
   background-color: aquamarine;
 }
+
+.left-menu {
+  grid-area: left-menu;
+  background-color: aqua;
+}
+
+.main {
+  padding: 50px;
+  grid-area: main;
+  background-color: lightcoral;
+  display: grid;
+  grid-template-columns: 220px;
+  grid-template-rows: 300px;
+}
+
+.boolean-card{
+  border: 2px solid black;
+  border-radius: 7px;
+}
+
+.circle {  
+  width: 50px;  
+  height: 50px;  
+  border-radius: 50%;  
+  border: solid 2px black;  
+  background-color: red;  
+  text-align: center;  
+  color: white;  
+}  
+  
+.relative {   
+  position: sticky;  
+  right: 20px;
+  
+}
+
+.right-menu {
+  grid-area: right-menu;
+  background-color: lightgreen;
+}
+
+.left-menu,
+.right-menu,
+.main{
+  min-height: 600px;
+}
+
