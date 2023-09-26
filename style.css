@@ -1,0 +1,48 @@
+.card {
+  border: 1px solid black;
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card .text {
+  margin: 10px;
+  height: 100px;
+  overflow: hidden;
+}
+
+.header-img {
+  height: 175px;
+  /* object-fit: fill; */
+  overflow: hidden;
+}
+
+.header-img > img {
+  width: 100%;
+  object-fit: fill;
+}
+
+.img-container {
+  height: 40px;
+  position: relative;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  width: 30px;
+  right: 10px;
+  border-radius: 100%;
+}
+
+.github {
+  right: 10px;
+}
+
+.twitter {
+  right: 50px;
+}
