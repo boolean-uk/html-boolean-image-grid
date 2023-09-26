@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header, footer {
+  background-color: blue;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon img {
+  height: 30px;
+  width: auto;
+}
+
+footer {
+  bottom: 0;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 2em;
+  margin-top: 60px;
+}
+
+.card {
+  border: 1px solid #053ef7;
+  padding: 1em;
+  position: relative;
+}
+
+.card .main-image {
+  max-width: 100%;
+  height: auto;
+}
+
+.social-icons img {
+  width: 24px;
+  height: auto;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  right: 10px; 
+  max-height: 40px; 
+  max-width: 40px; 
+  overflow: hidden; 
+}
+
+.logo img {
+  width: 100%;
+  height: auto;
+}
+
+
+.detail-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1em;
+  padding: 2em;
+  margin-top: 60px;
+}
+
+.detail-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+.navigation-button {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.navigation-button button {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.navigation-button button:hover {
+  background-color: darkblue;
+}
