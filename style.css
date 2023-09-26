@@ -119,3 +119,16 @@ header {
 .info p {
     max-width: 500px;
 }
+
+/* Footer Section */
+footer {
+    background-color: #011434;
+    height: 72px;
+}
+
+footer span {
+    position: relative;
+    top: 2rem;
+    left: 1rem;
+    color: white;
+}
