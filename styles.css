@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  header, footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  header {
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .icon img {
+    height: 30px;
+    width: auto;
+  }
+  
+  footer {
+    bottom: 0;
+  }
+  
+  .hero img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 90px;
+    margin-top: 60px;
+  }
+  
+  .card {
+    border: 1px solid #053ef7;
+    padding: 1em;
+    position: relative;
+  }
+  
+  .card .pcImage {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  .social img {
+    width: 24px;
+    height: auto;
+    position: relative;
+    right: -125px;
+    top: 5px;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 15px;
+    right: 15px; 
+    max-height: 40px; 
+    max-width: 40px; 
+    overflow: hidden; 
+  }
+  
+  .logo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  
+  .detail {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1em;
+    padding: 2em;
+    margin-top: 60px;
+  }
+  
+  .detail img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .navigation-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+  }
+
+  .btn {
+    display: block;
+    background-color: blue;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin: 25px ;
+    color: white;  
+  }
+
+  a {
+    text-decoration: none;
+  }
+
+  .btn:hover {
+    background-color: lightblue;
+    color: blue;
+    border: 1px solid blue;
+  }
