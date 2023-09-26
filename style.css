@@ -1,3 +1,6 @@
+* {
+  font-family: sans-serif;
+}
 .card {
   border: 1px solid black;
   height: 300px;
@@ -7,10 +10,12 @@
   position: relative;
 }
 
-.card .text {
-  margin: 10px;
-  height: 100px;
-  overflow: hidden;
+.text {
+  position: absolute;
+  width: 80%;
+  font-size: small;
+  margin: 20px;
+  text-overflow: ellipsis;
 }
 
 .header-img {
@@ -25,7 +30,6 @@
 }
 
 .img-container {
-  height: 40px;
   position: relative;
   display: grid;
   grid-auto-flow: column;
@@ -33,9 +37,9 @@
 
 .logo {
   position: absolute;
-  top: 10px;
   width: 30px;
   right: 10px;
+  top: 10px;
   border-radius: 100%;
 }
 
