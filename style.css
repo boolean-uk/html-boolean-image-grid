@@ -19,18 +19,18 @@ footer {
 
 
 .hero-section{
-    background-image: url(./assets/images/hero.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),  url(./assets/images/hero.jpg);
     height: 500px;
     display: grid;
-
 }
 
 .hero-text{
     place-self: center;
     color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 5px;
 }
-
-
 
 
 .laptop {
