@@ -69,12 +69,13 @@ place-items: center;
     font-weight: bold;
 
     position: fixed;
-    bottom: 60%;
+    bottom: 80%;
     left: 20px;
 }
 
 .return-to-cards-text:hover {
     background-color: burlywood;
+    color: var(--boolean-color);
 }
 
 /* FOOTER */

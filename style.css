@@ -75,11 +75,18 @@
 
 .card-link {
     text-decoration: none;
+    border-radius: 10px;
 }
 
 .card-link:visited {
     text-decoration: none;
     color: black;
+}
+
+.card-link:hover {
+    background-color: rgba(255, 166, 0, 0.858);
+    color: white;
+    font-weight: bold;
 }
 
 .card {
@@ -114,7 +121,6 @@
 
 .icons {
     display: inline;
-    /* display: grid; */
     justify-self: end;
     align-self: center;
     padding: 10px;
