@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    outline: 3px dashed pink;
+}
+header{
+    height: 80px;
+    background-color: navy;
+}
+.logo {
+    height: 60px;
+    background-color: aqua;
+    width: 60px;
+    border-radius:50%;
+
+}
+header .logo{
+    position: relative;
+    top: 10px;
+    left: 10px;
+}
