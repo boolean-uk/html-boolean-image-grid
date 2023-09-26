@@ -1,0 +1,85 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+}
+
+body{
+height: 100vh;
+width: 100vw;
+
+}
+
+.container{
+    display: grid;
+    grid-template: 
+
+    "header    header      header" 50px
+    " .        main           .  "  1fr
+    "footer    footer      footer" 50px/
+     300px       1fr          300px;
+}
+
+
+.logo{
+    height: 35px;
+    width: 35px;
+    border-radius: 50px;
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(1, 20, 52);
+}
+
+main{
+    display: grid;
+    grid-area: main;
+    margin-top: 10px;
+    gap: 10px;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr));
+}
+
+.cards{
+    border: solid 2px black;
+    position: relative;
+    border-radius: 10px;
+     height: 450px;
+     width: 300px;
+}
+
+.cards > p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.top-right{
+    position: absolute;
+    top: 5px;
+    right: 5px;
+}
+
+.gittwit {
+    width: 30px;
+    height: 30px;
+    position: relative;
+    left: 230px;
+    top: 15px;
+    margin-bottom: 30px;
+}
+
+.laptop {
+ width: 300px;
+ object-fit: fill;
+ border-top-right-radius: 10px;
+ border-top-left-radius: 10px;
+}
+
+
+
+
+footer{
+grid-area: footer;
+margin-top: 20px;
+background-color: rgb(1, 20, 52) ;
+}
