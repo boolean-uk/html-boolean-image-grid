@@ -2,7 +2,52 @@
   font-family: sans-serif;
 }
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 70px;
+  background-color: rgb(3, 16, 55);
+  display: grid;
+  justify-content: end;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+header img {
+  height: 50px;
+}
+
+.hero {
+  height: 400px;
+  background-color:rgb(3, 16, 55);
+  overflow: hidden;
+  display: grid;
+  place-content: center;
+}
+
+.hero_title {
+  color: white;
+  font-size: larger;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px black solid;
+}
+
+.hero img {
+  opacity: 0.8;
+  object-fit: cover;
+  z-index: 0;
+}
+
 .grid-container {
+  margin: 50px 0;
   display: grid;
   gap: 20px;
   width: 100%;
@@ -12,6 +57,7 @@
 
 .card {
   border: 1px solid black;
+  background-color: white;
   height: 300px;
   width: 200px;
   border-radius: 5px;
@@ -59,8 +105,11 @@
 
 .logo {
   position: absolute;
-  width: 30px;
   right: 10px;
   top: 10px;
   border-radius: 100%;
+}
+
+.card .logo {
+  width: 30px;
 }
