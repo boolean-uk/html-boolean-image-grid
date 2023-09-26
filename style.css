@@ -1,0 +1,14 @@
+header {
+    background-color: darkblue;
+    height: 80px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.boolean-logo{
+    position: absolute;
+    top: 10px;
+    left: 8px;
+
+}
