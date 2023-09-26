@@ -73,10 +73,19 @@
     }
 }
 
+.card-link {
+    text-decoration: none;
+}
+
+.card-link:visited {
+    text-decoration: none;
+    color: black;
+}
+
 .card {
     display: grid;
     width: 100%;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: repeat(3, auto);
     border: solid 1px var(--boolean-color);
     border-radius: 10px;
     position: relative;
@@ -104,6 +113,8 @@
 }
 
 .icons {
+    display: inline;
+    /* display: grid; */
     justify-self: end;
     align-self: center;
     padding: 10px;
@@ -115,12 +126,13 @@
 
 .card-text {
     margin: 10px 50px 20px 10px;
+    text-decoration: none;
 }
 
 /* FOOTER */
 .footer {
     display: grid;
-    grid-template-columns: 50px 1fr 1fr;
+    grid-template-columns: 50px 1fr;
     gap: 5px;
     height: 60px;
     background-color: var(--boolean-color);
