@@ -16,6 +16,23 @@ footer {
     height: 50px;
     padding: 10px;
 }
+
+
+.hero-section{
+    background-image: url(./assets/images/hero.jpg);
+    height: 500px;
+    display: grid;
+
+}
+
+.hero-text{
+    place-self: center;
+    color: white;
+}
+
+
+
+
 .laptop {
     width:100%;
     height: auto; 
@@ -81,7 +98,6 @@ main {
     grid-auto-rows: 1fr;
     gap: 10px;
     padding: 5px;
-    border: 2px dotted red;
 }
 
 .card {
@@ -91,6 +107,10 @@ main {
     border-radius: 5px;
     width: 240px;
     height: 360px;
+}
+
+.background {
+    height: 900px;
 }
 
 
