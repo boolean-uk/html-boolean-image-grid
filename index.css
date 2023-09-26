@@ -1,0 +1,88 @@
+.container {
+    margin: 0, auto;
+    padding: 0;
+    display: grid;
+    grid-template: 
+    "header" 
+    "main"
+    "footer";
+    background-color: aqua;
+}
+
+.header {
+    grid-area: header;
+    background-color: rgb(13, 13, 61);
+    padding: 10px;
+    position: sticky;
+    top: 0;
+    box-shadow: 2px 2px 6px rgb(88, 90, 91);
+}
+
+.headerimage {
+    border-radius: 100px;
+    width: 40px;
+    position: relative;
+    left: 20px;
+}
+
+.cards {
+    display: grid;
+    grid-template: 
+    "card   card   card  card" 
+    "card   card   card  card" 
+    "card   card   card  card" 
+    "card   card   card  card" ;
+    gap: 30px;
+    background-color: white;
+    padding-top: 28px;
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-bottom: 30px;
+} 
+
+img {
+    width: 100%;
+    /*border-top-left-radius: 10px;
+    border-top-right-radius: 10px;*/
+}
+
+
+.icons {
+    display: grid;
+    grid-template: 
+    "github  twitter";
+    width: 60px;
+    padding: 15px;
+    gap: 5px;
+    place-self: end;
+}
+
+
+
+
+.card {
+    border: solid;
+    border-width: 2px;
+    box-shadow: 1px 1px 4px rgb(88, 90, 91);
+    border-radius: 10px;
+    display: grid;
+    grid-template: 
+    "img"
+    "icons"
+    "p";
+    overflow: hidden;
+    overla
+
+}
+
+p {
+    grid-area: p;
+    padding: 0px 40px 25px 15px;
+}
+
+
+footer {
+    grid-area: footer;
+    background-color: rgb(13, 13, 61) ;
+    padding: 16px;
+}
