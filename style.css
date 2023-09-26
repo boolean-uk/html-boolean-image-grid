@@ -1,11 +1,10 @@
 *{
     margin: 0;
-    outline: 3px dashed pink;
+    box-sizing: border-box;
 }
-header{
-    height: 80px;
-    background-color: navy;
-}
+
+/* ======== building blocks ======== */
+
 .logo {
     height: 60px;
     background-color: aqua;
@@ -13,8 +12,48 @@ header{
     border-radius:50%;
 
 }
-header .logo{
-    position: relative;
-    top: 10px;
-    left: 10px;
+
+.card {
+    height: 200px;
+    background-color: dodgerblue;
 }
+
+/* ======== header ======== */
+
+header{
+    display: grid;
+    /* height: 80px; */
+    background-color: navy;
+
+    grid-template-columns: 1fr auto;
+    padding: 10px;
+
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    color: azure;
+
+    place-items: center;
+    gap: 10px;
+}
+
+.nav-items {
+    width: 100%;
+    text-align: center;
+    padding: 5px;
+
+    background-color: pink;
+}
+
+/* ======== main ======== */
+
+main {
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 160px);
+    gap: 10px;
+}
+
