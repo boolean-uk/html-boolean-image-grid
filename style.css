@@ -1,0 +1,119 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/*header */
+
+header {
+  display: grid;
+  grid-template: 1fr / 77px 1fr;
+  height: 72px;
+  background-color: darkblue;
+}
+
+.logo__pix {
+  border: 1px solid darkblue;
+  border-radius: 50%;
+  background-image: url(assets/images/boolean.jpeg);
+  background-size: cover;
+}
+.main__hero {
+  display: grid;
+  background-image: url(assets/images/hero.jpg);
+  background-size: cover;
+  place-items: center;
+  height: 600px;
+}
+
+.main__hero h2 {
+  color: aliceblue;
+  width: fit-content;
+  border-radius: 5px;
+  padding: 3rem;
+}
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 300px);
+  place-content: center;
+  padding: 1rem 4rem;
+  gap: 7px;
+}
+
+.card {
+  display: grid;
+  grid-template: 2fr 1fr / 1fr;
+  border: 1px solid darkblue;
+  border-radius: 10px;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.image__card {
+  background-image: url(assets/images/boolean-laptop.jpg);
+  background-size: cover;
+}
+
+.card__info {
+  display: grid;
+  grid-template: 50px 1fr / 1fr;
+  padding: 0.5rem;
+  gap: 10px;
+}
+
+.card__description p,
+h1 {
+  max-width: 70%;
+}
+
+.card__description h1 {
+  text-align: center;
+  color: red;
+  font-size: 12px;
+}
+
+.card__info img {
+  float: right;
+  margin-right: 5px;
+  width: 35px;
+}
+
+.logo__inner {
+  position: relative;
+  float: right;
+  top: 5px;
+  right: 5px;
+  height: 54px;
+  width: 57px;
+}
+
+/* nav */
+.navigation {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding-right: 3rem;
+}
+
+.navigation a {
+  text-decoration: none;
+}
+
+.navigation a:visited {
+  color: #fff;
+}
+
+/* Footer Section */
+footer {
+  background-color: blue;
+  height: 72px;
+}
+
+footer span {
+  position: relative;
+  top: 2rem;
+  left: 1rem;
+  color: white;
+}
