@@ -1,0 +1,181 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color:white
+}
+
+.container {
+    display: grid;
+    /* creates one single column */
+    grid-template:
+    "header"
+    "main"
+    "footer";
+    grid-template-rows: 50px 100% 50px;
+    /* 100 view height */
+    gap:5px;
+    /* padding: 5px */
+
+    /* border: 1px dashed black; */
+}
+
+.header {
+    grid-area: header;
+    /* border: 1px dashed black; */
+    
+    background-color: rgb(12, 12, 58);
+    /* fix the header, width 100% */
+    position:fixed;
+    width: 100%;
+    top: 0
+}
+
+.boolean-icon {
+    width: 45px;
+    padding-left: 10px;
+    padding-top: 3px;
+ 
+}
+
+.main {
+    grid-area: main;
+    /* border: 1px dashed black; */
+
+    /* Make 3 columns - left empty, middle main content and then right empty */
+
+    display: grid;
+    grid-template: "empty-left-col main-content-col empty-right-col";
+    grid-template-columns: 150px 1fr 150px ;
+    gap:5px;
+    padding: 5px
+}
+
+.empty-left-col {
+    grid-area: empty-left-col;
+    /* border: 1px dashed black; */
+}
+
+/* Make the middle a bunch of cards */
+.main-content-col {
+    grid-area: main-content-col;
+    /* border: 1px dashed black; */
+
+    display: grid;
+    /* Row put in as many rows of a size of 400px */
+    grid-template-rows: repeat(auto-fit, 400px);
+    /* Columns, put in 4 columns of 265px */
+    grid-template-columns: repeat(4, 265px);
+    gap:5px;
+    padding: 5px;
+
+   
+    
+}
+
+.card {
+    border: 1px solid black;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template: 
+    "card-img"
+    "card-logos"
+    "card-text";
+    grid-template-rows:1fr 30px 90px ;
+    gap:5px;
+    padding: 5px;
+}
+
+.card-img {
+    /* border: 1px dashed black; */
+    width:100%;
+    height: 100%;
+    
+
+}
+
+.img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    
+    /* object-fit: contain; */
+}
+
+.github {
+    width: 25px;
+    position: relative;
+    left: 190px;
+    top:1px;
+}
+
+.twitter {
+    width: 25px;
+    position: relative;
+    left: 190px;
+    top:1px;
+  
+}
+
+.card-logos {
+    /* border: 1px dashed black; */
+}
+
+.card-text {
+    /* border: 1px dashed black; */
+}
+
+.card-text > p {
+    font-size: 15px;
+    padding: 10px;
+}
+
+.empty-right-col {
+    grid-area: empty-right-col;
+    /* border: 1px dashed black; */
+}
+
+
+.footer {
+    grid-area: footer;
+    /* border: 1px dashed black; */
+    background-color: rgb(12, 12, 58);
+
+    
+    /* position:fixed;
+    width: 100%;
+    bottom: 0 */
+
+
+} 
+
+/* Making it reponsive  - The number of cards displayed in a single row should be reduced*/
+
+/* Media Query for smaller screens */
+/* When the screen is 800px, the main content column within the grid template columns should reduce to 3 */
+
+@media (max-width: 800px) {
+    .main-content-col {
+        grid-template-columns: repeat(3, 265px);
+    }
+}
+
+/* Media Query for even smaller screens - 600px */
+/* When the screen is 600px, the main content column within the grid template columns should reduce to 1 */
+
+@media (max-width: 600px) {
+    .main-content-col {
+        grid-template-columns: repeat(1, 265px);
+    }
+}
+
+/* Media Query for even smaller screens - 400px */
+/* When the screen is 400px width, only one should appear */
+@media (max-width: 400px) {
+    .main-content-col {
+        grid-template-columns: 265px;
+    }
+}
