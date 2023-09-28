@@ -15,9 +15,6 @@ body{
 
 header{
     margin-bottom: 10px;
-    position: sticky;
-    top: 0;
-    left: 0;
     z-index: 1;
     display: grid;
     color:rgb(38, 214, 38);
@@ -32,7 +29,18 @@ header span{
     color: white;
 }
 
-header,footer{
+header{
+    position: sticky;
+    top: 0;
+    background-color: rgb(4, 4, 66);
+    display: grid;
+   align-content: center;
+
+}
+
+footer{
+    position: sticky;
+    bottom: 0;
     background-color: rgb(4, 4, 66);
     display: grid;
    align-content: center;
@@ -47,42 +55,18 @@ header > img, footer > img{
 
 /* Header & Footer */
 main {
-    width: 100%;
-    max-width: 700px;
+    max-width: 800px;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
     margin: 0 auto;
     gap: 5px;
+    padding: 0 10px 0 10px;
 }
-
-@media only screen and (max-width: 600px) {
-    main {
-        width: 100%;
-        grid-template-columns: repeat(2 ,1fr); 
-    }
-}
-
-@media only screen and (max-width: 468px) {
-    main {
-        width: 100%;
-        grid-template-columns: 1fr; 
-    }
-}
-
-
 
 main .profile-card {
     overflow: hidden;
     position: relative ;
     box-shadow: inset 5px 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-@media only screen and (max-width: 468px) {
-    main .profile-card {
-        width: 90%;
-        margin: 0 auto;
-
-    }
 }
 
 main .profile-card > img:nth-of-type(1){
