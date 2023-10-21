@@ -1,0 +1,131 @@
+body {
+    margin: 0;
+}
+
+
+.hero>img {
+    width: 100%;
+    height: auto;
+}
+.grid {
+    display: grid;
+    grid-template-areas: 100px 100% 100px;
+}
+
+.header {
+    display: grid;
+    background-color: #011434;
+    position: sticky;
+    top: 0;
+    height: 100px;
+    z-index: 3;
+}
+.header > div > img {
+    object-fit: cover;
+    width: 85px;
+    margin-top: 6px ;
+    margin-left: 6px;
+    display: inline-block;
+
+}
+
+.footer {
+    background-color: #011434;
+    display: grid;
+    height: 100px;
+
+}
+
+.main {
+    display: grid;
+    background-color: white;
+        grid-template-columns: repeat(4, 400px);
+    justify-content: center;
+    gap: 10px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+
+
+.main > div {
+    border: solid 2px black;
+    border-radius: 5%;
+}
+.innerdiv {
+    display: grid;
+    grid-template-rows: 70% 10% 20%;
+    
+}
+
+.innerdiv>div>img {
+
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+    width: 498px;
+    border-start-end-radius: 5%;
+    border-start-start-radius: 5%;
+}
+.computer {
+    float: left;
+    position: relative;
+    display: block;
+}
+
+
+.box>img {
+
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+        left: 300px;
+        top: 10px;
+        z-index: 2;
+}
+.logos {
+    display: grid;
+    grid-template-columns: 15% 15%;
+        justify-content: right;
+        gap: 5px;
+        margin-top: 20px;
+        margin-right: 15px;
+}
+p {
+    font-size: 20px;
+}
+.text {
+    margin-left: 15px;
+    padding-right: 27%;
+    margin-bottom: 110px;
+    padding-bottom: 100px;
+}
+@media screen and (max-width: 1600px) {
+    .main {
+        display: grid;
+        background-color: white;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            justify-content: center;
+                gap: 10px;
+                margin-top: 30px;
+                margin-bottom: 30px;
+            }
+            
+            .innerdiv>div>img {
+                height: auto;
+                width: auto;
+                
+}
+
+button {
+    background-color: #00DF6C;
+    font-size: 15px;
+    margin-bottom: 20px;
+    
+}
+
+.detail-image>img {
+    width: 100%;
+    height: auto;
+}
