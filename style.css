@@ -88,7 +88,7 @@ body {
 }
 
 .card-logos {
-    border: 1px dashed black; 
+    border: 0px dashed black; 
 }
 
 .card-text {
@@ -102,7 +102,7 @@ body {
 
 .empty-right-col {
     grid-area: empty-right-col;
-    border: 1px dashed black;
+   
 }
 
 .footer {
