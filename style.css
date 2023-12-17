@@ -88,11 +88,11 @@ body {
 }
 
 .card-logos {
-    border: 0px dashed black; 
+    border: 0px black; 
 }
 
 .card-text {
-     border: 1px dashed black;
+     border: 1px black;
 }
 
 .card-text > p {
