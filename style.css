@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+/***** Header *****/
+header {
+  height: 70px;
+  background-color: #011434;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.logo {
+  width: 50px;
+  height: 50px;
+}
+
+/***** Main *****/
+main {
+  background-image: url(./assets/images/hero.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+
+  margin-top: 70px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 30px 10px;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-flow: row;
+  gap: 15px;
+}
+
+.card {
+  background-color: aliceblue;
+
+  border: 1px solid #011434;
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 0px #00df6c45;
+
+  position: relative;
+}
+
+.logo-card {
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  position: absolute;
+  top: 0.2rem;
+  right: 0.2rem;
+}
+
+.laptop img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 7px 7px 0 0;
+}
+
+.social-icons-container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+
+  padding: 10px;
+}
+
+.icon {
+  width: 30px;
+  height: 30px;
+}
+
+.text {
+  font-size: 14px;
+  padding: 0 10px 20px 10px;
+
+  line-height: 1.2;
+}
+
+/***** Footer *****/
+footer {
+  height: 70px;
+  background-color: #011434;
+  padding: 10px;
+  text-align: center;
+}
+
+/***** detail-page *****/
+.btn-back {
+  background-color: #fff;
+  padding: 10px 20px;
+  margin-left: 10px;
+
+  position: sticky;
+  top: 80px;
+
+  border-radius: 7px;
+  box-shadow: 2px 2px 2px 0px #00df6c45;
+
+  text-decoration: none;
+}
+
+.details {
+  max-width: 960px;
+
+  margin: 0 auto;
+  padding: 30px;
+
+  background-color: #fff;
+}
+
+.details img {
+  max-width: 100%;
+  height: auto;
+
+  border-radius: 7px;
+}
+
+h2 {
+  margin: 20px 0;
+}
+
+.details p {
+  line-height: 1.3;
+}
+
+/***** Responsive *****/
+
+@media screen and (max-width: 430px) {
+  .container {
+    padding: 15px;
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .details {
+    margin-top: 40px;
+  }
+
+  .btn-back {
+    position: relative;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width: 430px) and (max-width: 987px) {
+  .container {
+    padding: 15px;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .details {
+    margin-top: 40px;
+  }
+
+  .btn-back {
+    position: relative;
+    top: 15px;
+  }
+}
+
+@media screen and (min-width: 987px) and (max-width: 1265px) {
+  .container {
+    padding: 15px;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 20px;
+  }
+
+  .details {
+    margin-top: 40px;
+  }
+
+  .btn-back {
+    position: relative;
+    top: 15px;
+  }
+}
