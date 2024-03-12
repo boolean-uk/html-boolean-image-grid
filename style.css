@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+
+.container {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'main'
+    ;
+    height: 100vh;
+    grid-template-rows: 50px 1fr;
+    gap: 20px;
+}
+
+.header {
+    display: grid;
+    grid-area: header;
+    background-color: #011535;
+}
+
+.navbar img {
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.main .blocks {
+    grid-area: main;
+    grid-template-areas: 
+        'first-block second-block third-block fourth-block'
+        'fifth-block sixth-block seventh-block eighth-block'
+    ;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 1fr 1fr;
+    display: grid;
+    height: 100vh;
+    justify-content: center;
+    column-gap: 5px;
+    row-gap: 5px;
+}
+.main .image {
+    background: url(assets/images/boolean-laptop.jpg) no-repeat;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    align-items: left;
+}
+.main .icons img {
+    height: 20px;
+}
+.main .image img {
+    height: 40px;
+    border-radius: 50%;
+}
+
+/* .blocks {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+} */
+
+.first-block {
+    grid-area: first-block;
+    background-color: aquamarine;
+}
+.second-block {
+    grid-area: second-block;
+}
+.third-block {
+    grid-area: third-block;
+}
+.fourth-block {
+    grid-area: fourth-block;
+}
+.fifth-block {
+    grid-area: fifth-block;
+}
+.sixth-block {
+    grid-area: sixth-block;
+}
+.seventh-block {
+    grid-area: seventh-block;
+}
+.eighth-block {
+    grid-area: eighth-block;
+}
