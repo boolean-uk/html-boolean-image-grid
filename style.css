@@ -9,9 +9,9 @@ main {
     display: grid;
     grid-template: 
         'header' 70px
+        'hero-image' 100vh
         'card-grid' minmax(60px, 1fr)
         'footer' 70px;
-    gap: 20px;
 }
 
 header {
@@ -27,12 +27,32 @@ header .boolean-icon {
     width: 50px;
 }
 
+.hero-image {
+    display: flex;
+    background-image: url(assets/images/hero.jpg);
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-image p {
+    color: white;
+    background-color: #2D2D2Df0;
+    width: 300px;
+    height: 100px;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    padding: 27px;
+}
+
 .card-grid {
     display: grid;
     grid-template-columns: repeat(4, minmax(300px, 300px));
     justify-content: center;
     row-gap: 10px;
     column-gap: 10px;
+    padding: 20px;
 }
 
 .card {
@@ -76,9 +96,14 @@ header .boolean-icon {
     width: 30px;
 }
 
-p {
+.card-grid p {
     font-size: 16px;
     margin-left: 15px;
+    color: black;
+}
+
+a {
+    text-decoration: none;
 }
 
 .footer {
@@ -88,5 +113,13 @@ p {
 @media screen and (max-width: 1250px) {
     .card-grid {
         grid-template-columns: repeat(auto-fit, minmax(300px, 300px));
+    }
+    .hero-image p {
+        width: 250px;
+        height: 80px;
+        font-size: 20px;
+    }
+    .hero-image {
+        background-size: 1250px;
     }
 }
