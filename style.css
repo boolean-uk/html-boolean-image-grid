@@ -1,0 +1,117 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: arial;
+}
+
+.page-container {
+        min-height: 100vh;
+        display: flex;    
+        flex-direction: column; 
+}
+
+header {
+    background-color: #011534;
+    height: 50px;
+    width: 100%;
+}
+
+header img {
+    height: 50px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: inherit;
+}
+
+.hero {
+    background-image: URL("/assets/images/hero.jpg");
+    background-size: cover;
+    height: 400px;
+    margin-bottom:20px;
+    display: grid;
+    place-items: center;
+}
+
+.hero p {
+    padding: 20px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.429);
+    border-radius: 5px;
+}
+
+
+.main {
+    display: grid;
+    text-align: center;
+    max-width: 740px;
+}
+
+.card-container {
+    margin-left: 10%;
+    margin-right: 10%;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 160px);
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.card {
+    display: grid;
+    width: 150px;
+    border: 1px solid;
+    border-radius: 6px;
+}
+
+.card-topper {
+   background-image: url("/assets/images/boolean-laptop.jpg");
+   background-repeat: no-repeat;
+   background-size: 140px 130px;
+   background-position: 0 10px;
+   height:140px;
+   background-color: #00DF6C;
+   text-align: end;
+   padding: 4px;
+}
+
+.card-topper .boolean-icon {
+    height: 30px;
+    grid-area: imgs;
+    border-radius: 50%;
+    justify-self: end;
+}
+
+.card-topper .laptop-image {
+    width: 140px;
+}
+
+.card-bottomer {
+    padding: 4px;
+    
+}
+
+.card-bottomer p {
+    font-size: 12px;
+    padding: 5px;
+}
+
+.card-bottomer .social-icons img {
+    height: 20px;
+}
+
+.card-bottomer .social-icons {
+    text-align: end;
+}
+
+footer {
+    background-color: #011534;
+    height: 50px;
+    width: 100%;
+    margin-top: auto;
+}
