@@ -35,7 +35,7 @@
     grid-template-columns: 200px 200px 200px 200px;
     grid-template-rows: 1fr 1fr;
     display: grid;
-    height: 100vh;
+    height: 105vh;
     justify-content: center;
     column-gap: 5px;
     row-gap: 5px;
@@ -45,7 +45,8 @@
     height: 200px;
     background-size: cover;
     background-position: center;
-    align-items: left;
+    border-top-left-radius: 1em;
+    border-top-right-radius: 1em;
 }
 .main .icons img {
     height: 20px;
@@ -61,27 +62,56 @@
 } */
 
 .first-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: first-block;
-    background-color: aquamarine;
 }
 .second-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: second-block;
 }
 .third-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: third-block;
 }
 .fourth-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: fourth-block;
 }
 .fifth-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: fifth-block;
 }
 .sixth-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: sixth-block;
 }
 .seventh-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: seventh-block;
 }
 .eighth-block {
+    border: 1px solid black;
+    border-radius: 1em;
     grid-area: eighth-block;
+}
+
+.blocks .lorem p {
+    font-size: 75%;
+    margin: 20px 0px 0px 8px;
+}
+
+.icons {
+    margin: 0px 0px 0px 145px;
+    padding-top: 15px;
+}
+
+.image {
+    align-self: left;
 }
