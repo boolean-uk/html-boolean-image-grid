@@ -89,6 +89,7 @@ main {
     grid-template-columns: 30px 30px;
     justify-content: right;
     padding: 20px 10px;
+    gap: 5px;
 }
 
 .p-container p {
