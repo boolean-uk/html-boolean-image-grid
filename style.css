@@ -6,13 +6,15 @@ body {
     background-color: lightseagreen;
 }
 
+
 .container {
     display: grid;
     height: 100vh;
     grid-template:
         'header header header' 5%
         'hero hero hero' 20%
-        'main main main' 1fr 'footer footer footer' 5%
+        'main main main' 1fr 
+        'footer footer footer' 5%
     ;
 }
 
@@ -157,22 +159,18 @@ body {
     .main {
         grid-template-columns: 1fr;
     }
-
-
 }
 
 @media screen and (min-width: 480px) and (max-width: 720px) {
     .main {
         grid-template-columns: 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 720px) and (max-width: 980px) {
     .main {
         grid-template-columns: 1fr 1fr 1fr;
     }
-
 }
 
 @media screen and (min-width: 980px) and (max-width: 1080px) {
