@@ -1,0 +1,16 @@
+{
+	"name": "ex4",
+	"version": "1.0.0",
+	"description": "Today we're recreating a grid of cards. You'll have the opportunity to implement and style images. The final result should look like this:",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1",
+		"watch-tailwindcss": "npx tailwind -i ./tailwind.css -o ./css.css --watch"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"dependencies": {
+		"tailwindcss": "^3.4.1"
+	}
+}
