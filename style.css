@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+header {
+    height: fit-content;
+    width: 100%;
+    background-color: #011434;
+    position: fixed;
+    z-index: 1;
+}
+
+.hero{
+    display: grid;
+    background-image: url(assets/images/hero.jpg);
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    justify-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.title{
+    color: white;
+    background-color: rgba(0, 0, 0, 0.26);
+    text-align: center;
+    padding: 30px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+header img{
+    height:50px
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, 300px);
+    grid-auto-rows: auto;
+    padding: 5rem 15rem 5rem 15rem;
+    gap:15px;
+    justify-content: center;
+}
+
+.card {
+    display: grid;
+    grid-template: "card-top" auto
+        "card-bottom" 1fr /300px;
+
+
+    border: 1px solid black;
+    border-radius: 10px;
+    width: fit-content;
+}
+
+.card-top img {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+}
+
+.card-top .boolean {
+    width: 50px;
+    border-radius: 50px;
+
+    position: absolute;
+    right: 5px;
+    top: 10px;
+}
+
+
+
+.card-top {
+   position: relative;
+}
+
+.card-bottom {
+    display: grid;
+
+    grid-template: ". github twitter" 1rem
+        "content . ." 1fr/1fr;
+
+    gap:5px;
+    padding: 20px 10px 10px 10px;
+}
+
+.card-bottom p {
+    grid-area: content;
+    padding: 5px 15px;
+}
+
+.card-bottom img {
+    width: 32px;
+}
+
+.card-bottom .github {
+    grid-area: github;
+}
+
+.card-bottom .twitter {
+    grid-area: twitter;
+}
+
+@media screen and (min-width: 400px) and (max-width: 1980px) {
+    .container {
+        padding: 5rem 4rem 5rem 5rem;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .container {
+        padding: 2rem 3rem 5rem 2rem;
+    }
+}

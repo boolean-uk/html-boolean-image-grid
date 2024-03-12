@@ -1,13 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Image Grid</title>
-  </head>
-  <body>
 
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="stylesheet" href="style.css" />
+  <title>Image Grid</title>
+</head>
+
+<body>
+
+  <header>
+    <img src="assets/images/boolean.jpeg" alt="">
+  </header>
+  <div class="hero">
+    <h2 class="title">Boolean Image Grid</h2>
+  </div>
+  <div class="container">
+    <div id="card-proto" class="card">
+      <div class="card-top">
+        <img src="assets/images/boolean-laptop.jpg" alt="">
+        <img class="boolean" src="assets/images/boolean.jpeg" alt="">
+      </div>
+      <div class="card-bottom">
+        <img class="github" src="assets/icons/github.svg" alt="">
+        <img class="twitter" src="assets/icons/twitter.svg" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto deserunt modi inventore ut.</p>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function cloneElement() {
+      for (let i = 0; i < 15; i++) {
+        let clone = document.querySelector('#card-proto').cloneNode(true)
+        document.querySelector('.container').appendChild(clone)
+      }
+      return clone
+    }
+    cloneElement()
+  </script>
+</body>
+
 </html>
