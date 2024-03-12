@@ -1,0 +1,152 @@
+* {
+    margin: 0px;
+
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+
+    grid-template-rows: 70px 1fr 70px;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+/* Header */
+header {
+    background-color: #011434;
+    grid-area: header;
+   
+}
+
+.boolean-logo {
+    height: 70px;
+}
+
+/* Main */
+main {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) 2fr minmax(20px, 1fr);
+    grid-template-areas: 
+    '. cards .';
+
+    background-image: url(./assets/images/hero.jpg);
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-auto-rows: auto;
+    grid-area: cards;
+    gap: 10px;
+
+    padding: 50px 0px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: 200px 1fr;
+    border: 1px solid black;
+    border-radius: 10px;
+
+    background-color: white;
+}
+
+.laptop {
+    background-image: url(./assets/images/boolean-laptop.jpg);
+    background-size: 100% 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+
+    display: grid;
+    justify-content: right;
+}
+
+.boolean {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+
+    padding: 10px;
+}
+
+.p-container nav img {
+    height: 30px;
+}
+
+.socials {
+    display: grid;
+    grid-template-columns: 30px 30px;
+    justify-content: right;
+    padding: 20px 10px;
+    gap: 10px
+}
+
+.p-container p {
+    padding: 0px 10px 30px 10px;
+}
+
+.card-link a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Main - Second page */
+.second-page {
+    grid-area: main;
+    display: grid;
+    grid-template-columns: minmax(20px, 1fr) minmax(200px, 2fr) minmax(20px, 1fr);
+    grid-template-areas: 
+    '. main .';
+
+    background-image: url(./assets/images/hero.jpg);
+}
+
+.second-page-container {
+    grid-area: main;
+    background-color: white;
+
+    margin: 50px 0px;
+
+    display: grid;
+
+    border: 3px solid black;
+    border-radius: 10px;
+}
+
+.second-page-laptop {
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+}
+
+.second-page-container h1 {
+    text-align: center;
+    padding: 50px 0px 20px 0px;
+}
+
+.second-page-container img {
+    height: 800px;
+    width: 100%;
+}
+
+.second-page-container p {
+    padding: 0px 20px 30px 20px;
+}
+
+.second-page-container a {
+    text-align: center;
+    background-color: none;
+    color: #01112d;
+    font-size: 20px;
+}
+
+
+/* Footer */
+footer {
+    grid-area: footer;
+    background-color: #01112d;
+}
