@@ -2,6 +2,7 @@
     margin: 0;
     font-family: sans-serif;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 .container {
@@ -9,9 +10,10 @@
     grid-template-areas: 
         'header'
         'main'
+        'footer'
     ;
     height: 100vh;
-    grid-template-rows: 50px 1fr;
+    grid-template-rows: 50px 75em 50px;
     gap: 20px;
 }
 
@@ -31,11 +33,13 @@
     grid-template-areas: 
         'first-block second-block third-block fourth-block'
         'fifth-block sixth-block seventh-block eighth-block'
+        'nineth-block tenth-block eleventh-block twelfth-block'
+        'thirteenth-block fourteenth-block fifteenth-block sixteenth-block'
     ;
     grid-template-columns: 200px 200px 200px 200px;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     display: grid;
-    height: 105vh;
+    height: 100vh;
     justify-content: center;
     column-gap: 5px;
     row-gap: 5px;
@@ -47,6 +51,8 @@
     background-position: center;
     border-top-left-radius: 1em;
     border-top-right-radius: 1em;
+    padding-top: 8px;
+    padding-right: 8px;
 }
 .main .icons img {
     height: 20px;
@@ -54,64 +60,80 @@
 .main .image img {
     height: 40px;
     border-radius: 50%;
+    display: block;
+    margin-left: auto;
 }
 
-/* .blocks {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-} */
+.block-border {
+    border-radius: 1em;
+    border: 1px solid black;
+}
 
 .first-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: first-block;
 }
 .second-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: second-block;
 }
 .third-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: third-block;
 }
 .fourth-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: fourth-block;
 }
 .fifth-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: fifth-block;
 }
 .sixth-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: sixth-block;
 }
 .seventh-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: seventh-block;
 }
 .eighth-block {
-    border: 1px solid black;
-    border-radius: 1em;
     grid-area: eighth-block;
+}
+
+.nineth-block {
+    grid-area: nineth-block;
+}
+.tenth-block {
+    grid-area: tenth-block;
+}
+.eleventh-block {
+    grid-area: eleventh-block;
+}
+.twelfth-block {
+    grid-area: twelfth-block;
+}
+.thirteenth-block {
+    grid-area: thirteenth-block;
+}
+.fourteenth-block {
+    grid-area: fourteenth-block;
+}
+.fifteenth-block {
+    grid-area: fifteenth-block;
+}
+.sixteenth-block {
+    grid-area: sixteenth-block;
 }
 
 .blocks .lorem p {
     font-size: 75%;
-    margin: 20px 0px 0px 8px;
+    margin: 10px 0px 8px 10px;
 }
 
 .icons {
     margin: 0px 0px 0px 145px;
-    padding-top: 15px;
+    padding-top: 10px;
 }
 
-.image {
-    align-self: left;
+.footer {
+    grid-area: footer;
+    background-color: #011535;
 }
+
+/* .image {
+    align-self: right;
+} */
