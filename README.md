@@ -22,6 +22,10 @@ Today we're recreating a grid of cards. You'll have the opportunity to implement
 - The hero section should look something like this:
 ![HeroSection](images/hero-page-result.png)
 
+Wasn't sure about this so I added an alternative layout.
+![Original](./images/orig.png)
+![Alternative](./images/alt.png)
+
 ## Challenge 2
 - Create a second page that will be linked to each card. This is called a detail page
 and should contain the same image as the card, plus some other descriptive content.
