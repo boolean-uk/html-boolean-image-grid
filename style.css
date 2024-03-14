@@ -1,0 +1,86 @@
+/*.container {
+    display: grid;
+    grid-template-rows: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px 100px;
+}
+*/
+body, h1, p {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added to include padding in the element's total width and height */
+  }
+  
+  .main-header, .main-footer {
+    background-color: #01043f; /* Assuming dark green based on the image */
+    color: white;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    z-index: 10; /* Ensure the header and footer are above the other content */
+  }
+  
+  .main-header {
+    top: 0;
+  }
+  
+  .main-footer {
+    bottom: 0;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 4 columns */
+    grid-gap: 1em;
+    padding-top: 60px; /* Space for fixed header */
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-bottom: 60px; /* Adjusted space for fixed footer */
+    padding-left: 1em; /* Consistent padding */
+    padding-right: 1em; /* Consistent padding */
+  }
+  
+  .card {
+    background-color: #00e676; /* Assuming light green based on the image */
+    border-radius: 10px;
+    overflow: hidden;
+  }
+  
+  .card-image img {
+    width: 100%;
+    display: block;
+  }
+  
+  .card-content {
+    padding: 1em;
+    font-size: 0.9em;
+  }
+  
+  .card-icons {
+    text-align: center;
+    padding: 0.5em 0;
+  }
+  
+  .card-icons img {
+    width: 24px;
+    margin: 0 0.5em;
+  }
+  
+  @media (max-width: 1200px) {
+    .grid-container {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .grid-container {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  }
+  
