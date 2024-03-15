@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    
+  }
+
+  body {
+    height: 100vh;
+    display: grid;
+   grid-template-columns:auto;
+  
+  }
+
+header {
+    background-color: blue;
+    height: 90px;
+}
+
+
+
+
+header img{
+    display: grid;
+    height: 90px; 
+    width: 90px;
+
+}
+
+
+
+main {
+    padding: 16px;
+    
+  }
+  
+
+.logo {
+    margin-left: 180px;
+    border-radius: 90px;
+}
+
+
+.small-icon {
+    width: 30px;
+    height: 30px;
+    margin-left:0px;
+    
+}
+
+.small-icon-box {
+    width: 200px;
+    text-align: right
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    width: 80%;
+    margin: 40px auto;
+    gap: 10px;
+}
+
+
+.card {
+    border: black solid 2px;
+    border-radius: 6px;
+    grid-template-rows: repeat(2,1fr);
+    background-image: linear-gradient(to bottom, rgb(8, 230, 41) 0%, rgb(8, 230, 41) 40%, white 40%, white 100%) ;
+    
+}
+.card .img{ 
+    display: grid;
+    background-color: white;
+
+    width: 50px; 
+    height:20px;
+}
+.card .logo{
+    height: 50px;
+    width: 50px;
+
+   
+}
+
+.laptop-image {
+    display: grid;
+    width: 230px;
+    background-color: green;
+    border: 10px green;
+}
+
+.card-paragraph {
+    padding: 14px;
+    width: 200px;
+    background-color: white;
+    grid-row: auto-fill;
+}
+
+
+
