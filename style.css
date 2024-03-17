@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+}
+.hero-box {
+  margin: 0px 200px 0px 200px;
+  position: relative;
+  box-sizing: content-box;
+  top: 0px;
+  left: 0px;
+  max-width: 1100px;
+ 
+  height: auto;
+  .hero-image {
+    top: 0px;
+    left: 0px;
+    position: absolute;
+    max-height: 500px;
+    max-width: 1100px;
+    width: 100%;
+  }
+  .text-hero {
+    position: absolute;
+    top: 30%;
+    left: 30%;
+    background-color: rgba(0, 0, 0, 0.178);
+    padding: 10px 20px 10px 20px ;
+    font-size: 50px;
+    color: white;
+  }
+  
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-rows: 50px 500px 1fr 50px;
+  max-width: 1500px;
+  width: 100%;
+}
+
+.main-header {
+  height: 50px;
+  background-color: #011434;
+  img {
+    height: 40px;
+    width: 40px;
+  }
+}
+
+.main-content {
+  padding: 50px 200px 50px 200px;
+}
+
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fill,253px);
+  gap: 10px ;
+  .laptop-box {
+    position: relative;
+    top: 0;
+    right: 0;
+    box-sizing: content-box;
+    .boolean-img {
+      position: relative;
+      top: 0;
+      right: 0;
+      height: 250px;
+      width: 250px;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .boolean-logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      height: 40px;
+      width: 40px;
+      border-radius: 20px;
+      margin: 5px;
+    }
+  }
+  .myImages {
+    border-radius: 10px;
+    border: 1px solid black;
+    
+    
+    .github-img,.twitter-img {
+      float: inline-end;
+      padding: 5px;
+      height: 30px;
+      width: 30px;
+    }
+  }
+  p {
+    float: inline-end;
+    padding: 10px 50px 10px 10px;
+    font-size: 13px;
+  }
+  
+}
+
+.main-footer {
+  background-color: red;
+  height: 50px;
+}
+
